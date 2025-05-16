@@ -184,52 +184,21 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Form confirmation (for contact page)
-    const contactForm = document.querySelector('.contact-form');
-    const formConfirmation = document.querySelector('.form-confirmation');
-    if (contactForm && formConfirmation) {
-        contactForm.addEventListener('submit', async function (e) {
-            e.preventDefault();
+    function validateForm(formElement) {
+    const inputs = formElement.querySelectorAll('input[required], textarea[required], select[required]');
+    let isValid = true;
 
-            // Get form data
-            const formData = new FormData(this);
-            const submitBtn = this.querySelector('.submit-btn');
+    inputs.forEach(input => {
+        if (!input.value.trim()) {
+            input.classList.add('error');
+            isValid = false;
+        } else {
+            input.classList.remove('error');
+        }
+    });
 
-            // Validate form
-            if (!validateForm('contact-form')) {
-                return;
-            }
-
-            try {
-                // Show loading state
-                submitBtn.disabled = true;
-                submitBtn.textContent = 'Sending...';
-
-                // Simulate API call
-                await new Promise(resolve => setTimeout(resolve, 1500));
-
-                // Show success message
-                contactForm.style.display = 'none';
-                formConfirmation.style.display = 'block';
-
-                // Reset form
-                this.reset();
-
-                // Reset button after 5 seconds
-                setTimeout(() => {
-                    submitBtn.disabled = false;
-                    submitBtn.textContent = 'Send Message';
-                    contactForm.style.display = 'block';
-                    formConfirmation.style.display = 'none';
-                }, 5000);
-
-            } catch (error) {
-                console.error('Error submitting form:', error);
-                alert('There was an error sending your message. Please try again.');
-                submitBtn.disabled = false;
-                submitBtn.textContent = 'Send Message';
-            }
-        });
-    }
+    return isValid;
+}
 });
 
 // Modal functionality
