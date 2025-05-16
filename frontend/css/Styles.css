@@ -60,6 +60,11 @@ p {
   color: var(--gray-light);
   line-height: 1.7;
 }
+.para p {
+  margin-bottom: 1rem;
+  color: var(--gray-light);
+  line-height: 1.7;
+}
 
 /* Text Readability Improvements */
 .section-heading, 
@@ -263,6 +268,11 @@ footer {
   h5 { font-size: 1.1rem; }
   h6 { font-size: 1rem; }
   
+ .para p {
+  margin-bottom: 1rem;
+  color: var(--gray-light);
+  line-height: 1.7;
+}
   .footer-content {
     grid-template-columns: 1fr;
     text-align: center;
@@ -4882,7 +4892,7 @@ img {
 }
 
 .policy-section h2 {
-  color: #2c3e50;
+  color: #0787ff;
   font-size: 28px;
   border-left: 6px solid #3498db;
   padding-left: 12px;
@@ -5207,7 +5217,14 @@ img {
 .hamburger.active span:nth-child(3) {
   transform: rotate(-45deg) translate(6px, -6px);
 }
-nav ul {
+
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+  nav ul {
   display: none;
   flex-direction: column;
   background: #000;
@@ -5223,12 +5240,6 @@ nav ul {
 nav ul.active {
   display: flex;
 }
-
-/* Media Query for Mobile */
-@media (max-width: 768px) {
-  .hamburger {
-    display: flex;
-  }
 }
 
 

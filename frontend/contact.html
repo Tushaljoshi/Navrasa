@@ -43,7 +43,6 @@
                     <li><a href="careers.html">Careers</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                     <button class="contact-btn" onclick="openModal('consultationModal')">Request to Quote</button>
-
                 </ul>
             </nav>
         </div>
@@ -230,6 +229,30 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        /* hamburger*/
+document.addEventListener("DOMContentLoaded", function () {
+  const hamburger = document.getElementById("hamburger");
+  const nav = document.querySelector("nav ul");
+
+  if (hamburger && nav) {
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("active"); // animate icon
+      nav.classList.toggle("active");       // toggle menu
+    });
+
+    // Optional: Close menu on link click
+    nav.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        hamburger.classList.remove("active");
+        nav.classList.remove("active");
+      });
+    });
+  }
+});
+
+    </script>
 </body>
 
 </html>
