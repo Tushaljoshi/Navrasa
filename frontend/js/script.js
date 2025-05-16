@@ -234,204 +234,6 @@ document.addEventListener('keydown', (e) => {
         modals.forEach(modal => closeModal(modal.id));
     }
 });
-/*
-// Form validation
-function validateForm(formId) {
-    const form = document.getElementById(formId);
-    const inputs = form.querySelectorAll('input[required], textarea[required], select[required]');
-    let isValid = true;
-
-    inputs.forEach(input => {
-        // Remove existing error messages
-        const existingError = input.parentElement.querySelector('.error-message');
-        if (existingError) {
-            existingError.remove();
-        }
-
-        // Reset error state
-        input.classList.remove('error');
-
-        // Validate required fields
-        if (!input.value.trim()) {
-            isValid = false;
-            input.classList.add('error');
-        } else {
-            // Validate specific field types
-            switch (input.type) {
-                case 'email':
-                    if (!isValidEmail(input.value.trim())) {
-                        isValid = false;
-                        input.classList.add('error');
-                        showError(input, 'Please enter a valid email address');
-                    }
-                    break;
-                case 'tel':
-                    if (!isValidPhone(input.value.trim())) {
-                        isValid = false;
-                        input.classList.add('error');
-                        showError(input, 'Please enter a valid phone number');
-                    }
-                    break;
-                case 'text':
-                    if (input.id === 'consultName' && !isValidName(input.value.trim())) {
-                        isValid = false;
-                        input.classList.add('error');
-                        showError(input, 'Please enter a valid name');
-                    }
-                    break;
-            }
-        }
-
-        // Validate select fields
-        if (input.tagName === 'SELECT' && input.value === '') {
-            isValid = false;
-            input.classList.add('error');
-            showError(input, 'Please select a service');
-        }
-    });
-
-    return isValid;
-}
-
-function isValidEmail(email) {
-    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    return emailRegex.test(email);
-}
-
-function isValidPhone(phone) {
-    // Allows international phone numbers with optional + prefix
-    const phoneRegex = /^\+?[\d\s-()]{10,}$/;
-    return phoneRegex.test(phone);
-}
-
-function isValidName(name) {
-    // Allows letters, spaces, and basic punctuation
-    const nameRegex = /^[a-zA-Z\s.'-]{2,50}$/;
-    return nameRegex.test(name);
-}
-
-function showError(input, message) {
-    const errorDiv = document.createElement('div');
-    errorDiv.className = 'error-message';
-    errorDiv.textContent = message;
-    input.parentElement.appendChild(errorDiv);
-}
-*/
-/*
-// Consultation form handling
-const consultationForm = document.getElementById('consultationForm');
-if (consultationForm) {
-    consultationForm.addEventListener('submit', async function (e) {
-        e.preventDefault();
-
-        // Get form data
-        const formData = new FormData(this);
-        const submitBtn = this.querySelector('.submit-btn');
-
-        // Validate form
-        if (!validateForm('consultationForm')) {
-            return;
-        }
-
-        try {
-            // Show loading state
-            submitBtn.disabled = true;
-            submitBtn.textContent = 'Booking...';
-
-            // Simulate API call
-            await new Promise(resolve => setTimeout(resolve, 1500));
-
-            // Show success message
-            const modalContent = this.closest('.modal-content');
-            const formContainer = this.parentElement;
-            const successMessage = document.createElement('div');
-            successMessage.className = 'form-confirmation';
-            successMessage.innerHTML = `
-                <p>Thank you for booking a consultation! We'll contact you within 24 hours to schedule your session.</p>
-            `;
-
-            formContainer.appendChild(successMessage);
-            this.style.display = 'none';
-
-            // Reset form and button after 5 seconds
-            setTimeout(() => {
-                this.reset();
-                submitBtn.disabled = false;
-                submitBtn.textContent = 'Book Consultation';
-                this.style.display = 'block';
-                successMessage.remove();
-            }, 5000);
-
-        } catch (error) {
-            console.error('Error submitting consultation form:', error);
-            alert('There was an error booking your consultation. Please try again.');
-            submitBtn.disabled = false;
-            submitBtn.textContent = 'Book Consultation';
-        }
-    });
-
-    // Add real-time validation
-    const inputs = consultationForm.querySelectorAll('input, textarea, select');
-    inputs.forEach(input => {
-        input.addEventListener('blur', () => {
-            validateForm('consultationForm');
-        });
-    });
-}
-*/
-/*
-// Quote form handling
-const quoteForm = document.getElementById('quoteForm');
-if (quoteForm) {
-    quoteForm.addEventListener('submit', async function (e) {
-        e.preventDefault();
-
-        // Get form data
-        const formData = new FormData(this);
-        const submitBtn = this.querySelector('.submit-btn');
-
-        // Validate form
-        if (!validateForm('quoteForm')) {
-            return;
-        }
-
-        try {
-            // Show loading state
-            submitBtn.disabled = true;
-            submitBtn.textContent = 'Submitting...';
-
-            // Simulate API call
-            await new Promise(resolve => setTimeout(resolve, 1500));
-
-            // Show success message
-            const modalContent = this.closest('.modal-content');
-            const formContainer = this.parentElement;
-            const successMessage = document.createElement('div');
-            successMessage.className = 'form-confirmation';
-            successMessage.innerHTML = `
-                <p>Thank you for your quote request! We'll review your requirements and get back to you within 24 hours.</p>
-            `;
-
-            formContainer.appendChild(successMessage);
-            this.style.display = 'none';
-
-            // Reset form and button after 5 seconds
-            setTimeout(() => {
-                this.reset();
-                submitBtn.disabled = false;
-                submitBtn.textContent = 'Submit Request';
-                this.style.display = 'block';
-                successMessage.remove();
-            }, 5000);
-
-        } catch (error) {
-            console.error('Error submitting quote form:', error);
-            alert('There was an error submitting your quote request. Please try again.');
-            submitBtn.disabled = false;
-            submitBtn.textContent = 'Submit Request';
-        }
-    });
-}*/
 // Initialize AOS (Animate On Scroll) if available
 if (typeof AOS !== 'undefined') {
     AOS.init({
@@ -568,3 +370,23 @@ function openModal(id) {
 function closeModal(id) {
     document.getElementById(id).style.display = 'none';
 }
+/* hamburger*/
+document.addEventListener("DOMContentLoaded", function () {
+  const hamburger = document.getElementById("hamburger");
+  const nav = document.querySelector("nav ul");
+
+  if (hamburger && nav) {
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("active"); // animate icon
+      nav.classList.toggle("active");       // toggle menu
+    });
+
+    // Optional: Close menu on link click
+    nav.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        hamburger.classList.remove("active");
+        nav.classList.remove("active");
+      });
+    });
+  }
+});
