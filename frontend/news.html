@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>News & Events - NavRasa IT Solutions</title>
+    <script src="js/script.js" defer></script>
+    <script src="js/contact.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <span class="logo-img" style="background-image:url('images/navrasa_logo.png');"></span>
+                <div>
+                    <h1>NavRasa</h1>
+                    <p>IT SOLUTIONS</p>
+                </div>
+            </div>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">Company</a></li>
+                    <li class="dropdown">
+                        <a href="service.html">Services</a>
+                        <div class="dropdown-content">
+                            <a href="service.html#digital-transformation">Digital Transformation</a>
+                            <a href="service.html#digital-commerce">Digital Commerce</a>
+                            <a href="service.html#product-engineering">Product Engineering</a>
+                            <a href="service.html#ai-ml">AI & ML Solutions</a>
+
+                        </div>
+                    </li>
+                    <li><a href="blog.html" class="blog-btn">Blog</a></li>
+                    <li><a href="index.html">Career</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <button class="contact-btn" onclick="openModal('consultationModal')">Request to Quote</button>
+
+
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>News & Events</h1>
+                <p>Stay up-to-date with our achievements, project launches, and industry presence.</p>
+            </div>
+        </section>
+        <section class="news-events">
+            <div class="container">
+                <div class="news-cards">
+                    <!-- Card 1 -->
+                    <div class="news-card">
+                        <div class="image-container">
+                            <img src="images/AI.jpeg" alt="NavRasa AI Suite">
+                        </div>
+                        <div class="content-container">
+                            <h3>Launch of NavRasa AI Suite</h3>
+                            <p>We unveiled our AI & ML product suite to revolutionize automation. The suite is designed
+                                with cutting-edge features like predictive analytics, intelligent automation, and
+                                scalable architecture, providing businesses with the ability to make data-driven
+                                decisions faster and with more accuracy. Through the AI suite, companies can now
+                                anticipate market trends, optimize their operations, and reduce costs through
+                                automation.</p>
+                            <p>With the integration of machine learning, NavRasa's AI suite allows businesses to evolve
+                                dynamically, responding to environmental shifts and internal data trends. We are proud
+                                to lead the way in leveraging AI to transform industries, and this launch marks a
+                                significant milestone in our ongoing commitment to innovation and excellence. This is
+                                just the beginning, and we’re excited to see how our clients will leverage this
+                                technology for their own growth.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="news-card">
+                        <div class="image-container">
+                            <img src="images/corp.jpeg" alt="Partnership with Corp">
+                        </div>
+                        <div class="content-container">
+                            <h3>Partnership with Corp</h3>
+                            <p>NavRasa partners with Corp to expand cloud services nationwide, providing cutting-edge,
+                                secure, and scalable infrastructure solutions to industries across the board. This
+                                partnership is designed to tackle the growing demand for robust digital infrastructure,
+                                enabling organizations to build better systems, faster processes, and achieve more agile
+                                responses to market demands.</p>
+                            <p>The joint venture is set to provide a comprehensive suite of cloud-based services that
+                                empower companies to optimize their digital footprint. By offering scalable cloud
+                                solutions tailored to specific industries, we aim to drive transformation in areas such
+                                as e-commerce, manufacturing, and healthcare. This collaboration promises to enhance
+                                operational efficiency, security, and customer satisfaction while ensuring
+                                cost-effective and high-performance solutions for our clients.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="news-card">
+                        <div class="image-container">
+                            <img src="images/web.jpeg" alt="Digital Transformation Webinar">
+                        </div>
+                        <div class="content-container">
+                            <h3>Webinar on Digital Transformation</h3>
+                            <p>Our latest webinar attracted over 300 participants who gained valuable insights into
+                                digital transformation strategies, agile methodologies, and the latest industry
+                                innovations. The session was led by industry experts and featured live case studies and
+                                Q&A sessions, ensuring that attendees could directly apply the lessons learned to their
+                                own businesses.</p>
+                            <p>The webinar covered topics such as overcoming digital transformation challenges, adopting
+                                cloud-native solutions, and the importance of data-driven decision-making. Participants
+                                also explored how artificial intelligence and machine learning are reshaping industries,
+                                improving productivity, and fostering new business models. The event concluded with a
+                                hands-on demonstration, where attendees had the chance to experience live
+                                implementations of the tools discussed.</p>
+                            <p>This event was not only an excellent opportunity for networking but also an important
+                                learning experience for businesses looking to stay competitive in today’s fast-paced
+                                digital world. We look forward to hosting more events that provide value to our
+                                community and continue our mission of enabling organizations to digitally transform and
+                                thrive.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">Company</a></li>
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="index.html">Careers</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="service.html#software">Software Development</a></li>
+                        <li><a href="service.html#web">Web Development</a></li>
+                        <li><a href="service.html#mobile">Mobile App Development</a></li>
+                        <li><a href="service.html#cloud">Cloud Solutions</a></li>
+                        <li><a href="service.html#ui">UI/UX Design</a></li>
+                        <li><a href="service.html#consulting">IT Consulting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="case.html">Case Studies</a></li>
+                        <li><a href="FQA.html">FQAs</a></li>
+                        <li><a href="news.html">News & Events</a></li>
+                        <li><a href="FQA.html">Downloads</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="policy.html">Privacy Policy</a></li>
+                        <li><a href="policy.html">Terms of Use</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <p>Shyam Nagar, Jaipur, Rajasthan, India</p>
+                    <p><a href="mailto:info@navrasaitsolutions.com">info@navrasaitsolutions.com</a></p>
+                    <p><a href="tel:+916377067867">+916377067867</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 NavRasa IT Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!--Consultation Form Modal-->
+    <div id="consultationModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('consultationModal')">&times;</button>
+            <h2>Book a Free Consultation</h2>
+            <form id="consultationForm" class="contact-form">
+                <div class="form-row" style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <div class="form-group" style="flex:1; min-width:220px;">
+                        <label for="consultName">Your Name*</label>
+                        <input type="text" id="consultName" name="consultName" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group" style="flex:1; min-width:220px;">
+                        <label for="consultEmail">Email*</label>
+                        <input type="email" id="consultEmail" name="consultEmail" placeholder="Enter your email"
+                            required>
+                    </div>
+                </div>
+                <div class="form-row" style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <div class="form-group" style="flex:1; min-width:220px;">
+                        <label for="consultPhone">Mobile Number</label>
+                        <input type="tel" id="consultPhone" name="consultPhone" placeholder="Enter your phone number">
+                    </div>
+                    <div class="form-group" style="flex:1; min-width:220px;">
+                        <label for="consultCompany">Company Name</label>
+                        <input type="text" id="consultCompany" name="consultCompany"
+                            placeholder="Enter your company name (optional)">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="consultService">Service*</label>
+                    <select id="consultService" name="consultService" required>
+                        <option value="">Please Select Service</option>
+                        <option value="Software Development">Software Development</option>
+                        <option value="Web Development">Web Development</option>
+                        <option value="Mobile App Development">Mobile App Development</option>
+                        <option value="Cloud Solutions">Cloud Solutions</option>
+                        <option value="UI/UX Design">UI/UX Design</option>
+                        <option value="IT Consulting">IT Consulting</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="consultDetails">Project Details</label>
+                    <textarea id="consultDetails" name="consultDetails"
+                        placeholder="Enter project details (optional)"></textarea>
+                </div>
+                <div style="font-size: 0.85rem; color: #888; margin-bottom: 1rem;">
+                    This site is protected by reCAPTCHA and the Google <a href="#" style="color:#2563eb;">Privacy
+                        Policy</a> and <a href="#" style="color:#2563eb;">Terms of Service</a> apply.
+                </div>
+                <button type="submit" class="submit-btn" style="width:100%;background:#000;">Submit</button>
+            </form>
+            <div class="form-confirmation" style="display: none;">
+                <p>Thank you for booking a consultation! We'll contact you within 24 hours to schedule your session.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

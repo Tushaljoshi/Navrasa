@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>NavRasa IT Solutions - Digital Transformation Experts</title>
+    <script src="js/script.js" defer></script>
+    <script src="js/contact.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <span class="logo-img" style="background-image:url('images/navrasa_logo.png');"></span>
+                <div>
+                    <h1>NavRasa</h1>
+                    <p>IT SOLUTION</p>
+                </div>
+            </div>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">Company</a></li>
+                    <li class="dropdown">
+                        <a href="service.html">Services</a>
+                        <div class="dropdown-content">
+                            <a href="service.html#digital-transformation">Digital Transformation</a>
+                            <a href="service.html#digital-commerce">Digital Commerce</a>
+                            <a href="service.html#product-engineering">Product Engineering</a>
+                            <a href="service.html#ai-ml">AI & ML Solutions</a>
+                        </div>
+                    </li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="index.html">Careers</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <button class="contact-btn" onclick="openModal('consultationModal')">Request to Quote</button>
+
+
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>NavRasa IT Solutions</h1>
+                    <p>>Stay informed, stay inspired.</p>
+                </div>
+            </div>
+        </section>
+        <section class="blog-section container">
+            <div class="blog-card" id="card1">
+                <h2>1.Web & Mobile App Development</h2>
+                <p class="summary">In the fast-paced world of technology, delivering seamless and high-performance web
+                    and mobile applications is more important than ever. These applications are not just tools; they are
+                    gateways to engaging with customers and providing exceptional user experiences.</p>
+                <button class="learn-more-btn" data-target="card1">Learn More</button>
+                <div class="more-content">
+                    <p>Effective web and mobile app development requires a deep understanding of user behavior,
+                        technical architecture, and performance optimization. By leveraging technologies like React,
+                        Angular, Swift, and Kotlin, developers can create applications that are fast, responsive, and
+                        scalable. Whether it’s for business tools, eCommerce platforms, or entertainment apps, focusing
+                        on an intuitive user experience can greatly enhance brand loyalty and customer satisfaction.
+                        The key to success lies in building apps that work seamlessly across devices and platforms. This
+                        means ensuring apps load quickly, offer smooth navigation, and integrate easily with other
+                        systems. High-quality development also involves maintaining security, optimizing performance,
+                        and continuously improving the app based on user feedback and analytics. A well-designed
+                        application not only drives engagement but also helps businesses build stronger, long-lasting
+                        relationships with their users.
+                    </p>
+                </div>
+            </div>
+
+            <div class="blog-card" id="card2">
+                <h2>2.Custom eCommerce Solutions</h2>
+                <p class="summary">In the ever-evolving world of online retail, having an eCommerce platform that stands
+                    out is crucial for success. With the rise of online shopping, businesses need more than just a
+                    website to sell products; they need a seamless, user-friendly platform that enhances customer
+                    satisfaction and boosts conversions.</p>
+                <button class="learn-more-btn" data-target="card2">Learn More</button>
+                <div class="more-content">
+                    <p>Custom eCommerce solutions are tailored to meet specific business needs, providing everything
+                        from sleek, responsive storefronts to powerful integrations that streamline inventory management
+                        and order processing. Platforms like Shopify, WooCommerce, and Magento offer versatile features,
+                        but the real value lies in customizing these platforms to match your business model.
+                        By focusing on key aspects such as mobile optimization, secure payment gateways, personalized
+                        recommendations, and SEO, businesses can create an engaging and efficient shopping experience.
+                        In addition, integrating data analytics and customer insights can help improve decision-making,
+                        refine marketing strategies, and increase customer retention.
+                        Whether you’re a small startup or an established business, investing in a custom eCommerce
+                        platform is essential for creating a robust online presence, driving growth, and staying ahead
+                        in the competitive digital marketplace.
+                    </p>
+                </div>
+            </div>
+            <div class="blog-card" id="card3">
+                <h2>3.Digital Marketing & Strategy:</h2>
+                <p class="summary">In today’s digital landscape, businesses need more than just a presence on the
+                    internet. To truly thrive, they need strategic digital marketing that builds lasting relationships
+                    with their audience and fosters long-term growth.</p>
+                <button class="learn-more-btn" data-target="card3">Learn More</button>
+                <div class="more-content">
+                    <p>Effective digital marketing goes beyond running advertisements. It involves a deep understanding
+                        of customer behavior, content creation, and data analysis. A solid digital strategy includes
+                        components like SEO (Search Engine Optimization), social media engagement, paid advertising
+                        (PPC), email marketing, and content marketing.
+                        Start with a comprehensive discovery session to understand your audience and their needs. By
+                        leveraging tools like Google Analytics and social media insights, businesses can craft targeted
+                        strategies that resonate with potential customers. Continuous testing and optimization help
+                        ensure campaigns stay relevant, and the results are measurable, allowing brands to adjust their
+                        efforts and maximize return on investment.
+                        Adopting a data-driven approach to digital marketing helps businesses stay ahead of competitors,
+                        build trust with customers, and boost engagement, ultimately driving more sales and brand
+                        recognition.
+                    </p>
+                </div>
+            </div>
+            <div class="blog-card" id="card4">
+                <h2>4.End-to-End Digital Transformation</h2>
+                <p class="summary">Digital transformation is more than just adopting new technologies—it’s about
+                    rethinking your entire business model and how you deliver value to your customers. From automating
+                    internal processes to enhancing customer engagement, digital transformation enables businesses to
+                    remain competitive and agile in an increasingly fast-paced world</p>
+                <button class="learn-more-btn" data-target="card4">Learn More</button>
+                <div class="more-content">
+                    <p>Effective web and mobile app development requires a deep understanding of user behavior,
+                        technical architecture, and performance optimization. By leveraging technologies like React,
+                        Angular, Swift, and Kotlin, developers can create applications that are fast, responsive, and
+                        scalable. Whether it’s for business tools, eCommerce platforms, or entertainment apps, focusing
+                        on an intuitive user experience can greatly enhance brand loyalty and customer satisfaction.
+                        The key to success lies in building apps that work seamlessly across devices and platforms. This
+                        means ensuring apps load quickly, offer smooth navigation, and integrate easily with other
+                        systems. High-quality development also involves maintaining security, optimizing performance,
+                        and continuously improving the app based on user feedback and analytics. A well-designed
+                        application not only drives engagement but also helps businesses build stronger, long-lasting
+                        relationships with their users.
+                    </p>
+                </div>
+            </div>
+            <div class="blog-card" id="card5">
+                <h2>5.Cloud Integration & Enablement</h2>
+                <p class="summary">Cloud computing has become a cornerstone of modern business infrastructure, offering
+                    unparalleled flexibility, scalability, and cost efficiency. Moving to the cloud allows companies to
+                    access resources on demand, streamline operations, and reduce the need for expensive on-site
+                    infrastructure.</p>
+                <button class="learn-more-btn" data-target="card5">Learn More</button>
+                <div class="more-content">
+                    <p>Cloud integration refers to the process of connecting existing systems with cloud-based services
+                        to improve efficiency and accessibility. By adopting cloud solutions like AWS, Microsoft Azure,
+                        or Google Cloud, businesses can scale their operations without worrying about hardware
+                        limitations. Additionally, cloud services provide the agility to quickly adapt to changing
+                        business needs.
+                        One of the key benefits of cloud integration is the ability to access data and applications from
+                        anywhere, which facilitates remote work, improves collaboration, and enhances business
+                        continuity. Cloud computing also offers high levels of security, with features like data
+                        encryption and backup services ensuring that business-critical information remains safe.
+                        For businesses looking to innovate, the cloud provides the perfect environment to experiment
+                        with new technologies, automate workflows, and improve customer experiences. It accelerates
+                        time-to-market for products and services, ultimately helping businesses grow faster and more
+                        efficiently.
+                    </p>
+                </div>
+            </div>
+            <div class="blog-card" id="card6">
+                <h2>6.SaaS & Enterprise App Development</h2>
+                <p class="summary">Software as a Service (SaaS), Enterprise Resource Planning (ERP) systems, and
+                    Customer Relationship Management (CRM) tools have revolutionized the way businesses operate. These
+                    solutions streamline operations, improve collaboration, and provide businesses with valuable
+                    insights to help them make informed decisions.</p>
+                <button class="learn-more-btn" data-target="card6">Learn More</button>
+                <div class="more-content">
+                    <p>SaaS platforms offer businesses a way to access software applications over the internet without
+                        needing to install or maintain them on their own infrastructure. This reduces IT costs,
+                        increases scalability, and allows businesses to focus on their core operations. Popular SaaS
+                        platforms like Salesforce, HubSpot, and Zoho CRM have transformed how companies manage customer
+                        relationships and track business performance.
+                        ERP systems integrate various business functions into a single platform, making it easier to
+                        manage everything from inventory and supply chain to accounting and human resources. By
+                        centralizing data, ERP systems reduce manual errors, improve decision-making, and boost
+                        productivity.
+                        For businesses aiming to enhance operational efficiency, custom enterprise app development
+                        offers tailored solutions that address specific needs. From automating workflows to creating
+                        real-time dashboards, these apps help businesses streamline processes, improve customer service,
+                        and gain a competitive edge.
+                    </p>
+                </div>
+            </div>
+            <div class="blog-card" id="card7">
+                <h2>7.How We Help Startups Grow: Laying the Groundwork for Long-Term Success</h2>
+                <p class="summary">Startups face unique challenges, from limited resources and tight budgets to the
+                    pressure of rapidly scaling their business. However, with the right digital tools and strategies,
+                    startups can overcome these obstacles and position themselves for long-term success.</p>
+                <button class="learn-more-btn" data-target="card7">Learn More</button>
+                <div class="more-content">
+                    <p>Startups often need to be agile, adapting quickly to market changes and customer needs. This is
+                        where digital solutions come in—websites, mobile apps, and cloud-based platforms provide a
+                        strong foundation for growth. A well-developed website or app allows startups to establish an
+                        online presence, connect with customers, and start building brand loyalty from the outset.
+                        Digital marketing strategies like SEO, content marketing, and social media advertising enable
+                        startups to reach their target audience efficiently and cost-effectively. By focusing on
+                        customer acquisition, retention, and engagement, startups can build a solid customer base and
+                        generate ongoing revenue.
+                        Cloud-based solutions allow startups to scale quickly, offering the flexibility to expand their
+                        infrastructure as needed without heavy upfront investments. By leveraging SaaS, CRM, and ERP
+                        systems, startups can streamline their operations and focus on growth rather than managing
+                        complex internal processes.
+                        Ultimately, helping startups grow means providing them with the tools and knowledge they need to
+                        build a strong digital foundation and create sustainable growth strategies for the future.
+                    </p>
+                </div>
+            </div>
+            <div class="blog-card" id="card8">
+                <h2>8.Why IT Services are Essential for Small Business Success</h2>
+                <p class="summary">The Importance of IT Services
+                    IT services are critical to small business success in today’s digital world. These services help
+                    businesses stay competitive by improving efficiency, reducing costs, and offering better customer
+                    experiences. Here's why every small business needs professional IT solutions.
+                </p>
+                <button class="learn-more-btn" data-target="card8">Learn More</button>
+                <div class="more-content">
+                    <p>Stay Competitive
+                        To remain competitive in the market, small businesses must adopt technology that enhances their
+                        operations and service offerings. IT services provide access to the latest technologies,
+                        allowing small businesses to innovate and stay ahead of their competitors.
+                        Improve Customer Experience
+                        Technology plays a key role in customer service. By adopting IT solutions like CRM systems,
+                        helpdesk automation, and data analytics, small businesses can provide better, faster service to
+                        customers, resulting in higher customer satisfaction and loyalty.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">Company</a></li>
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="index.html">Careers</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="service.html#software">Software Development</a></li>
+                        <li><a href="service.html#web">Web Development</a></li>
+                        <li><a href="service.html#mobile">Mobile App Development</a></li>
+                        <li><a href="service.html#cloud">Cloud Solutions</a></li>
+                        <li><a href="service.html#ui">UI/UX Design</a></li>
+                        <li><a href="service.html#consulting">IT Consulting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="case.html">Case Studies</a></li>
+                        <li><a href="FQA.html">FQAs</a></li>
+                        <li><a href="news.html">News & Events</a></li>
+                        <li><a href="FQA.html">Downloads</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="policy.html">Privacy Policy</a></li>
+                        <li><a href="policy.html">Terms of Use</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <p>Shyam Nagar, Jaipur, Rajasthan, India</p>
+                    <p><a href="mailto:info@navrasaitsolutions.com">info@navrasaitsolutions.com</a></p>
+                    <p><a href="tel:+916377067867">+916377067867</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 NavRasa IT Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!--Consultation Form Modal-->
+    <div id="consultationModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('consultationModal')">&times;</button>
+            <h2>Book a Free Consultation</h2>
+            <form id="consultationForm" class="contact-form">
+                <div class="form-row" style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <div class="form-group" style="flex:1; min-width:220px;">
+                        <label for="consultName">Your Name*</label>
+                        <input type="text" id="consultName" name="consultName" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group" style="flex:1; min-width:220px;">
+                        <label for="consultEmail">Email*</label>
+                        <input type="email" id="consultEmail" name="consultEmail" placeholder="Enter your email"
+                            required>
+                    </div>
+                </div>
+                <div class="form-row" style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <div class="form-group" style="flex:1; min-width:220px;">
+                        <label for="consultPhone">Mobile Number</label>
+                        <input type="tel" id="consultPhone" name="consultPhone" placeholder="Enter your phone number">
+                    </div>
+                    <div class="form-group" style="flex:1; min-width:220px;">
+                        <label for="consultCompany">Company Name</label>
+                        <input type="text" id="consultCompany" name="consultCompany"
+                            placeholder="Enter your company name (optional)">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="consultService">Service*</label>
+                    <select id="consultService" name="consultService" required>
+                        <option value="">Please Select Service</option>
+                        <option value="Software Development">Software Development</option>
+                        <option value="Web Development">Web Development</option>
+                        <option value="Mobile App Development">Mobile App Development</option>
+                        <option value="Cloud Solutions">Cloud Solutions</option>
+                        <option value="UI/UX Design">UI/UX Design</option>
+                        <option value="IT Consulting">IT Consulting</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="consultDetails">Project Details</label>
+                    <textarea id="consultDetails" name="consultDetails"
+                        placeholder="Enter project details (optional)"></textarea>
+                </div>
+                <div style="font-size: 0.85rem; color: #888; margin-bottom: 1rem;">
+                    This site is protected by reCAPTCHA and the Google <a href="#" style="color:#2563eb;">Privacy
+                        Policy</a> and <a href="#" style="color:#2563eb;">Terms of Service</a> apply.
+                </div>
+                <button type="submit" class="submit-btn" style="width:100%;background:#000;">Submit</button>
+            </form>
+            <div class="form-confirmation" style="display: none;">
+                <p>Thank you for booking a consultation! We'll contact you within 24 hours to schedule your session.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

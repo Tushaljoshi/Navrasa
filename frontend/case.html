@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Case Studies - NavRasa IT Solutions</title>
+    <script src="js/script.js" defer></script>
+    <script src="js/contact.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <span class="logo-img" style="background-image:url('images/navrasa_logo.png');"></span>
+                <div>
+                    <h1>NavRasa</h1>
+                    <p>IT SOLUTIONS</p>
+                </div>
+            </div>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">Company</a></li>
+                    <li class="dropdown">
+                        <a href="service.html">Services</a>
+                        <div class="dropdown-content">
+                            <a href="service.html#digital-transformation">Digital Transformation</a>
+                            <a href="service.html#digital-commerce">Digital Commerce</a>
+                            <a href="service.html#product-engineering">Product Engineering</a>
+                            <a href="service.html#ai-ml">AI & ML Solutions</a>
+
+                        </div>
+                    </li>
+                    <li><a href="blog.html" class="blog-btn">Blog</a></li>
+                    <li><a href="index.html">Career</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <button class="contact-btn" onclick="openModal('consultationModal')">Request to Quote</button>
+
+
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Case Studies</h1>
+                <p>Our case studies demonstrate our capabilities in solving complex IT challenges. From cloud migration
+                    to system automation and cybersecurity, we showcase real-world success stories.</p>
+            </div>
+        </section>
+        <section>
+            <div class="case-study-card">
+                <img src="images/aws.png" alt="AWS Cloud Migration">
+                <div class="case-study-details" id="case-study-1">
+                    <h2>1.End-to-End AWS Cloud Migration for a Retail Brand</h2>
+                    <p>A leading retail brand sought to migrate its on-premises infrastructure to the AWS cloud to
+                        enhance scalability, reduce operational costs, and improve data accessibility. The migration was
+                        to include the entire product catalog, customer data, and transaction systems.</p>
+                    <ul>
+                        <li><strong>Challenges:</strong></li>
+                        <li>• The existing infrastructure was outdated, resulting in poor system performance and
+                            frequent downtimes.</li>
+                        <li>• The retail company had multiple legacy systems that were incompatible with cloud
+                            technologies.</li>
+                        <li>• Ensuring minimal disruption during migration to avoid impacting daily operations.</li>
+                    </ul>
+
+                    <div class="full-content">
+                        <ul>
+                            <li><strong>Solutions:</strong></li>
+                            <li>• Conducted a thorough analysis of the existing infrastructure and designed a
+                                comprehensive migration plan.</li>
+                            <li>• Leveraged AWS services like EC2, S3, and RDS to ensure a seamless transition.</li>
+                            <li>• Implemented a hybrid cloud solution initially to ensure continuity while migrating
+                                data and workloads.</li>
+                            <li>• Implemented a hybrid cloud solution initially to ensure continuity while migrating
+                                data and workloads.</li>
+                            <li>• Utilized AWS Lambda for serverless computing to improve scalability and reduce costs.
+                            </li>
+                        </ul>
+                        <ul>
+                            <li><strong>Outcomes:</strong></li>
+                            <li>• The migration resulted in a 40% reduction in operational costs due to the cloud-based
+                                pay-as-you-go model.</li>
+                            <li> • Improved website performance, with a 50% faster load time for customers.</li>
+                            <li> • Enhanced security with AWS’s built-in security features, reducing vulnerabilities.
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="javascript:void(0)" class="read-more" onclick="toggleContent('case-study-1')">Read More</a>
+                </div>
+            </div>
+            <div class="case-study-card">
+                <img src="images/devops.png" alt="AWS Cloud Migration">
+                <div class="case-study-details" id="case-study-2">
+                    <h2>2. DevOps Transformation for a Fintech Startup</h2>
+                    <p>A fintech startup aimed to streamline its development and deployment processes. They sought to
+                        implement a DevOps culture to enhance collaboration between development and operations teams,
+                        reduce time to market, and improve software quality.</p>
+                    <ul>
+                        <li><strong>Challenges:</strong></li>
+                        <li>• The startup’s development and operations teams worked in silos, causing delays and
+                            inefficiencies.</li>
+                        <li>• Frequent code deployment failures and inconsistent environments led to unpredictable
+                            system performance.</li>
+                        <li>• Limited automation in testing and deployment processes.</li>
+                    </ul>
+                    <div class="full-content">
+                        <ul>
+                            <li><strong>Solutions:</strong></li>
+                            <li>• Implemented continuous integration and continuous delivery (CI/CD) pipelines using
+                                Jenkins and GitLab.</li>
+                            <li>• Deployed containerization using Docker and Kubernetes to ensure consistent
+                                environments across development, testing, and production.</li>
+                            <li>• Introduced automated testing tools (e.g., Selenium, JUnit) to enhance software quality
+                                and reduce manual errors.</li>
+                            <li>• Used AWS CloudFormation to automate infrastructure provisioning and ensure
+                                scalability.</li>
+                        </ul>
+                        <ul>
+                            <li><strong>Outcomes:</strong></li>
+                            <li>• Reduced deployment times by 70%, enabling faster delivery of new features.</li>
+                            <li> • Enhanced system reliability and performance, with a 30% reduction in production
+                                downtime.</li>
+                            <li> • Improved collaboration between teams, accelerating the overall product development
+                                cycle.</li>
+                        </ul>
+                    </div>
+                    <a href="javascript:void(0)" class="read-more" onclick="toggleContent('case-study-2')">Read More</a>
+                </div>
+            </div>
+            <div class="case-study-card">
+                <img src="images/networks.png" alt="AWS Cloud Migration">
+                <div class="case-study-details" id="case-study-3">
+                    <h2>3. Enterprise Network Security Overhaul for a Healthcare Company</h2>
+                    <p>A large healthcare company needed to enhance its network security to comply with stringent
+                        regulations (HIPAA) and safeguard sensitive patient data. The goal was to prevent data breaches
+                        and ensure business continuity.</p>
+                    <ul>
+                        <li><strong>Challenges:</strong></li>
+                        <li>• The company had multiple legacy security systems that were difficult to integrate.</li>
+                        <li>• Compliance with healthcare data protection regulations, particularly HIPAA, was a major
+                            concern.</li>
+                        <li>• Frequent unauthorized access attempts, which threatened the confidentiality of patient
+                            data.</li>
+                    </ul>
+                    <div class="full-content">
+                        <ul>
+                            <li><strong>Solutions:</strong></li>
+                            <li>• Conducted a thorough security audit to identify vulnerabilities in the network and
+                                existing systems.</li>
+                            <li>• Implemented next-gen firewall solutions and advanced threat protection technologies.
+                            </li>
+                            <li>• Set up multi-factor authentication (MFA) and role-based access control (RBAC) to
+                                restrict access to sensitive data.</li>
+                            <li>• Upgraded the company’s VPN infrastructure to ensure secure remote access for
+                                employees.</li>
+                            <li>• Established real-time monitoring and alert systems using SIEM tools (e.g., Splunk) to
+                                detect suspicious activities.</li>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li><strong>Outcomes:</strong></li>
+                            <li>• Achieved full HIPAA compliance, passing all security audits without major issues.</li>
+                            <li>• Prevented several attempted data breaches, reducing security incidents by 80%.</li>
+                            <li>• Improved employee productivity with secure remote access capabilities, enabling smooth
+                                telemedicine operations.</li>
+                        </ul>
+                    </div>
+                    <a href="javascript:void(0)" class="read-more" onclick="toggleContent('case-study-3')">Read More</a>
+                </div>
+            </div>
+            <div class="case-study-card">
+                <img src="images/ERP.png" alt="AWS Cloud Migration">
+                <div class="case-study-details" id="case-study-4">
+                    <h2>4. ERP Customization and Deployment for a Manufacturing Firm</h2>
+                    <p>A manufacturing firm needed a customized ERP solution to integrate its production, inventory, and
+                        financial processes. The aim was to improve operational efficiency, reduce inventory waste, and
+                        gain real-time insights into business performance.</p>
+                    <ul>
+                        <li><strong>Challenges:</strong></li>
+                        <li>• The existing ERP system was outdated and didn’t meet the company’s unique business needs.
+                        </li>
+                        <li>• Data silos were causing inefficiencies in inventory and order tracking.</li>
+                        <li>• Customizing the ERP to integrate seamlessly with other internal systems posed technical
+                            challenges.</li>
+                    </ul>
+                    <div class="full-content">
+                        <ul>
+                            <li><strong>Solutions:</strong></li>
+                            <li>• Selected an open-source ERP solution (e.g., Odoo) and customized it to meet the
+                                company’s specific requirements.</li>
+                            <li>• Integrated the ERP with existing inventory management and financial systems to
+                                streamline processes.</li>
+                            <li>• Automated inventory tracking and ordering, reducing stockouts and overstock
+                                situations.</li>
+                            <li>• Implemented real-time reporting dashboards to provide insights into key business
+                                metrics.</li>
+                        </ul>
+                        <ul>
+                            <li><strong>Outcomes:</strong></li>
+                            <li>• Increased operational efficiency by 25%, with reduced lead times in production and
+                                order fulfillment.</li>
+                            <li>• Reduced inventory costs by 20% due to improved tracking and forecasting.</li>
+                            <li>• Enhanced decision-making with real-time insights into production, sales, and finance.
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="javascript:void(0)" class="read-more" onclick="toggleContent('case-study-4')">Read More</a>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">Company</a></li>
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="index.html">Careers</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="service.html#software">Software Development</a></li>
+                        <li><a href="service.html#web">Web Development</a></li>
+                        <li><a href="service.html#mobile">Mobile App Development</a></li>
+                        <li><a href="service.html#cloud">Cloud Solutions</a></li>
+                        <li><a href="service.html#ui">UI/UX Design</a></li>
+                        <li><a href="service.html#consulting">IT Consulting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="case.html">Case Studies</a></li>
+                        <li><a href="FQA.html">FAQs</a></li>
+                        <li><a href="news.html">News & Events</a></li>
+                        <li><a href="FQA.html">Downloads</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="policy.html">Privacy Policy</a></li>
+                        <li><a href="policy.html">Terms of Use</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <p>Shyam Nagar, Jaipur, Rajasthan, India</p>
+                    <p><a href="mailto:info@navrasaitsolutions.com">info@navrasaitsolutions.com</a></p>
+                    <p><a href="tel:+916377067867">+916377067867</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 NavRasa IT Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Consultation Form Modal-->
+    <div id="consultationModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('consultationModal')">&times;</button>
+            <h2>Book a Free Consultation</h2>
+            <form id="consultationForm">
+                <div class="form-group">
+                    <input type="text" id="consultName" name="name" required>
+                    <label for="consultName">Full Name</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="consultEmail" name="email" required>
+                    <label for="consultEmail">Email Address</label>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="consultPhone" name="phone" required>
+                    <label for="consultPhone">Phone Number</label>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="consultCompany" name="company" required>
+                    <label for="consultCompany">Company Name</label>
+                </div>
+                <div class="form-group">
+                    <select id="consultService" name="service" required>
+                        <option value="">Select Service</option>
+                        <option value="digital-transformation">Digital Transformation</option>
+                        <option value="digital-commerce">Digital Commerce</option>
+                        <option value="product-engineering">Product Engineering</option>
+                        <option value="ai-ml">AI & ML Solutions</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea id="consultDetails" name="details" rows="4" required></textarea>
+                    <label for="consultDetails">What would you like to discuss?</label>
+                </div>
+                <button type="submit" class="submit-btn">Book Consultation</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>About Us - NavRasa IT Solutions</title>
+    <script src="js/script.js" defer></script>
+    <script src="js/contact.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <span class="logo-img" style="background-image:url('images/navrasa_logo.png');"></span>
+                <div>
+                    <h1>NavRasa</h1>
+                    <p>IT SOLUTIONS</p>
+                </div>
+            </div>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">Company</a></li>
+                    <li class="dropdown">
+                        <a href="service.html">Services</a>
+                        <div class="dropdown-content">
+                            <a href="service.html#digital-transformation">Digital Transformation</a>
+                            <a href="service.html#digital-commerce">Digital Commerce</a>
+                            <a href="service.html#product-engineering">Product Engineering</a>
+                            <a href="service.html#ai-ml">AI & ML Solutions</a>
+                        </div>
+                    </li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="index.html">Careers</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <button class="contact-btn" onclick="openModal('consultationModal')">Request to Quote</button>
+
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>We're NAVRASA IT SOLUTIONS</h1>
+                <p>At NavRasa IT Solutions, we're passionate about helping businesses transform and thrive through
+                    tailored IT solutions. Whether you're a startup, SMB, or enterprise, we dig deep to understand your
+                    unique challenges and craft smart, scalable, and secure technology solutions.</p>
+                <p>With a sharp focus on innovation, quality, and client success, we bring together strategy,
+                    creativity, and technical excellence to build digital experiences that deliver measurable results.
+                </p>
+            </div>
+        </section>
+
+        <section class="highlights">
+            <div class="container">
+                <div class="highlights-grid">
+                    <div class="highlight-card">
+                        <div class="number">3+</div>
+                        <h3>Years of Industry Experience</h3>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="number">75+</div>
+                        <h3>Skilled IT Professionals</h3>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="number">200+</div>
+                        <h3>Clients Across the Globe</h3>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="number">30+</div>
+                        <h3>Startups Supported and Scaled</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="core-values">
+            <div class="container">
+                <h2>Core Values That Drive Our Vision</h2>
+                <p>At Navrasa IT Solutions, our vision has always been to build a modern, efficient, and collaborative
+                    work environment that empowers both our team and our clients. By embracing the latest tools and
+                    technologies, we've created a strong foundation that helps us deliver reliable, future-ready IT
+                    solutions for startups, small businesses, and growing enterprises.</p>
+            </div>
+        </section>
+
+        <section class="our-promise">
+            <div class="container">
+                <h2>Our Promise to You</h2>
+                <div class="promise-grid">
+                    <div class="promise-card">
+                        <div class="number">1</div>
+                        <h3>Innovative Solutions</h3>
+                        <p>We leverage modern technologies and creative strategies to deliver forward-thinking digital
+                            solutions that drive real results.</p>
+                    </div>
+                    <div class="promise-card">
+                        <div class="number">2</div>
+                        <h3>Client-Focused Approach</h3>
+                        <p>We prioritize your business goals by delivering customized IT services tailored to your
+                            unique challenges and objectives.</p>
+                    </div>
+                    <div class="promise-card">
+                        <div class="number">3</div>
+                        <h3>Quality-Driven Delivery</h3>
+                        <p>Every solution undergoes strict quality checks and best-practice testing protocols to ensure
+                            high performance and reliability.</p>
+                    </div>
+                    <div class="promise-card">
+                        <div class="number">4</div>
+                        <h3>24/7 Technical Support</h3>
+                        <p>Our dedicated team is always on standby to resolve issues quickly and keep your systems
+                            running without interruption.</p>
+                    </div>
+                    <div class="promise-card">
+                        <div class="number">5</div>
+                        <h3>Scalable Architecture</h3>
+                        <p>We build systems designed for future growth, ensuring that your digital infrastructure can
+                            evolve as your business expands.</p>
+                    </div>
+                    <div class="promise-card">
+                        <div class="number">6</div>
+                        <h3>Transparent Communication</h3>
+                        <p>We maintain open, timely communication throughout the project lifecycle, so you're always
+                            informed and in control.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="navrasa-edge">
+            <div class="container">
+                <h2>The Navrasa Edge</h2>
+                <div class="edge-grid">
+                    <div class="edge-card">
+                        <i class="fa-solid fa-lightbulb value-icon"></i>
+                        <h3>Cutting-Edge Technology</h3>
+                        <p>We stay ahead of the curve by continuously adopting and mastering the latest technologies and
+                            methodologies.</p>
+                    </div>
+                    <div class="edge-card">
+                        <i class="fa-solid fa-shield-halved value-icon"></i>
+                        <h3>Enterprise-Grade Security</h3>
+                        <p>Your data and systems are protected with industry-leading security measures and best
+                            practices.</p>
+                    </div>
+                    <div class="edge-card">
+                        <i class="fa-solid fa-bolt value-icon"></i>
+                        <h3>Agile Development</h3>
+                        <p>Our flexible, iterative approach ensures faster delivery and better alignment with your
+                            business needs.</p>
+                    </div>
+                    <div class="edge-card">
+                        <i class="fa-solid fa-headset value-icon"></i>
+                        <h3>Dedicated Support</h3>
+                        <p>Our team is committed to providing exceptional support and maintenance services around the
+                            clock.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="industries">
+            <div class="container industries-container">
+                <h2>Industries We Revolutionize</h2>
+                <div class="industries-grid">
+                    <div class="industry-card">Healthcare</div>
+                    <div class="industry-card">Education</div>
+                    <div class="industry-card">Retail & eCommerce</div>
+                    <div class="industry-card">Finance & Banking</div>
+                    <div class="industry-card">Media & Entertainment</div>
+                    <div class="industry-card">Real Estate</div>
+                    <div class="industry-card">Travel & Hospitality</div>
+                    <div class="industry-card">Startups and Small Businesses</div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">Company</a></li>
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="index.html">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="service.html#software">Software Development</a></li>
+                        <li><a href="service.html#web">Web Development</a></li>
+                        <li><a href="service.html#mobile">Mobile App Development</a></li>
+                        <li><a href="service.html#cloud">Cloud Solutions</a></li>
+                        <li><a href="service.html#ui">UI/UX Design</a></li>
+                        <li><a href="service.html#consulting">IT Consulting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="case.html">Case Studies</a></li>
+                        <li><a href="FQA.html">FQAs</a></li>
+                        <li><a href="news.html">News & Events</a></li>
+                        <li><a href="FQA.html">Downloads</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="policy.html">Privacy Policy</a></li>
+                        <li><a href="policy.html">Terms of Use</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <p>Shyam Nagar, Jaipur, Rajasthan, India</p>
+                    <p><a href="mailto:info@navrasaitsolutions.com">info@navrasaitsolutions.com</a></p>
+                    <p><a href="tel:+916377067867">+916377067867</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 NavRasa IT Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!--Consultation Form Modal-->
+    <div id="consultationModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('consultationModal')">&times;</button>
+            <h2>Book a Free Consultation</h2>
+            <form id="consultationForm" class="contact-form">
+                <div class="form-row" style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <div class="form-group" style="flex:1; min-width:220px;">
+                        <label for="consultName">Your Name*</label>
+                        <input type="text" id="consultName" name="consultName" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group" style="flex:1; min-width:220px;">
+                        <label for="consultEmail">Email*</label>
+                        <input type="email" id="consultEmail" name="consultEmail" placeholder="Enter your email"
+                            required>
+                    </div>
+                </div>
+                <div class="form-row" style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <div class="form-group" style="flex:1; min-width:220px;">
+                        <label for="consultPhone">Mobile Number</label>
+                        <input type="tel" id="consultPhone" name="consultPhone" placeholder="Enter your phone number">
+                    </div>
+                    <div class="form-group" style="flex:1; min-width:220px;">
+                        <label for="consultCompany">Company Name</label>
+                        <input type="text" id="consultCompany" name="consultCompany"
+                            placeholder="Enter your company name (optional)">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="consultService">Service*</label>
+                    <select id="consultService" name="consultService" required>
+                        <option value="">Please Select Service</option>
+                        <option value="Software Development">Software Development</option>
+                        <option value="Web Development">Web Development</option>
+                        <option value="Mobile App Development">Mobile App Development</option>
+                        <option value="Cloud Solutions">Cloud Solutions</option>
+                        <option value="UI/UX Design">UI/UX Design</option>
+                        <option value="IT Consulting">IT Consulting</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="consultDetails">Project Details</label>
+                    <textarea id="consultDetails" name="consultDetails"
+                        placeholder="Enter project details (optional)"></textarea>
+                </div>
+                <div style="font-size: 0.85rem; color: #888; margin-bottom: 1rem;">
+                    This site is protected by reCAPTCHA and the Google <a href="#" style="color:#2563eb;">Privacy
+                        Policy</a> and <a href="#" style="color:#2563eb;">Terms of Service</a> apply.
+                </div>
+                <button type="submit" class="submit-btn" style="width:100%;background:#000;">Submit</button>
+            </form>
+            <div class="form-confirmation" style="display: none;">
+                <p>Thank you for booking a consultation! We'll contact you within 24 hours to schedule your session.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

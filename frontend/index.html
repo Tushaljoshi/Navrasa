@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>NavRasa IT Solutions - Digital Transformation Experts</title>
+    <script src="js/script.js" defer></script>
+    <script src="js/contact.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <span class="logo-img" style="background-image:url('images/navrasa_logo.png');"></span>
+                <div>
+                    <h1>NavRasa</h1>
+                    <p>IT SOLUTIONS</p>
+                </div>
+            </div>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">Company</a></li>
+                    <li class="dropdown">
+                        <a href="service.html">Services</a>
+                        <div class="dropdown-content">
+                            <a href="service.html#digital-transformation">Digital Transformation</a>
+                            <a href="service.html#digital-commerce">Digital Commerce</a>
+                            <a href="service.html#product-engineering">Product Engineering</a>
+                            <a href="service.html#ai-ml">AI & ML Solutions</a>
+                        </div>
+                    </li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="index.html">Careers</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <button class="contact-btn" onclick="openModal('consultationModal')">Request to Quote</button>
+
+                    <!--li><a href="#" class="contact-btn" onclick="openModal('consultationModal')">Request to Quote</a></li-->
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" >
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Empowering Your Digital Growth</h1>
+                    <p>NavRasa IT Solutions helps startups, SMBs, and enterprises transform, scale, and succeed with
+                        innovative, secure, and scalable IT solutions. We blend strategy, creativity, and technology to
+                        deliver measurable business results.</p>
+                    <div class="hero-buttons">
+                        <button class="cta-btn" onclick="openModal('consultationModal')">Book a Free Consultation</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="core-services">
+            <div class="container">
+                <h2 class="section-heading">Our Core Services</h2>
+                <div class="service-cards">
+                    <div class="service-card">
+                        <h3>Digital Transformation</h3>
+                        <p>Streamline your business with automation, low-code apps, and AI. We help you modernize
+                            operations and boost productivity using the latest digital tools.</p>
+                        <div class="service-tags">
+                            <span>RPA</span>
+                            <span>Low-Code Apps</span>
+                            <span>Data & AI</span>
+                            <span>Business Automation</span>
+                            <span>Web & Mobile Apps</span>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <h3>Digital Commerce</h3>
+                        <p>Grow your online business with robust eCommerce solutions. We build user-friendly stores and
+                            marketplaces for B2C, B2B, and D2C brands.</p>
+                        <div class="service-tags">
+                            <span>Online Store Setup</span>
+                            <span>D2C Solutions</span>
+                            <span>Multi-vendor Platforms</span>
+                            <span>eCommerce Design</span>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <h3>Product Engineering</h3>
+                        <p>Turn your ideas into reality. From MVP to full-scale SaaS, we design, develop, and support
+                            custom software and digital products for startups and enterprises.</p>
+                        <div class="service-tags">
+                            <span>Startup MVPs</span>
+                            <span>SaaS Development</span>
+                            <span>UI/UX Design</span>
+                            <span>Custom Apps</span>
+                            <span>Product Support</span>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <h3>AI & ML Solutions</h3>
+                        <p>Leverage the power of AI. We integrate smart features, chatbots, and machine learning to help
+                            you automate, analyze, and innovate.</p>
+                        <div class="service-tags">
+                            <span>AI Tool Integration</span>
+                            <span>Chatbots</span>
+                            <span>Machine Learning</span>
+                            <span>Smart App Features</span>
+                            <span>AI Support</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="development-partners">
+            <div class="container">
+                <h2>Development Partners Using Trusted Platforms to Build Smart Digital Solutions</h2>
+                <div class="partners-grid">
+                    <!-- WordPress -->
+                    <div class="partner-card">
+                        <i class="fab fa-wordpress partner-icon"></i>
+                        <h3>WordPress</h3>
+                        <p>Custom WordPress development and optimization services.</p>
+                        <a href="#" class="partner-link">Learn More</a>
+                    </div>
+
+                    <!-- Zoho -->
+                    <div class="partner-card">
+                        <i class="fas fa-cloud partner-icon"></i>
+                        <h3>Zoho</h3>
+                        <p>Zoho CRM and business solutions implementation.</p>
+                        <a href="#" class="partner-link">Learn More</a>
+                    </div>
+
+                    <!-- TallyPrime -->
+                    <div class="partner-card">
+                        <i class="fas fa-calculator partner-icon"></i>
+                        <h3>TallyPrime</h3>
+                        <p>Accounting and business management solutions.</p>
+                        <a href="#" class="partner-link">Learn More</a>
+                    </div>
+
+                    <!-- Wix/Webflow -->
+                    <div class="partner-card">
+                        <i class="fas fa-globe partner-icon"></i>
+                        <h3>Wix/Webflow</h3>
+                        <p>Website development and design services.</p>
+                        <a href="#" class="partner-link">Learn More</a>
+                    </div>
+
+                    <!-- WooCommerce -->
+                    <div class="partner-card">
+                        <i class="fab fa-wordpress-simple partner-icon"></i>
+                        <h3>WooCommerce</h3>
+                        <p>E-commerce solutions and online store development.</p>
+                        <a href="#" class="partner-link">Learn More</a>
+                    </div>
+
+                    <!-- Google Workspace -->
+                    <div class="partner-card">
+                        <i class="fab fa-google partner-icon"></i>
+                        <h3>Google Workspace</h3>
+                        <p>Google Workspace setup and management services.</p>
+                        <a href="#" class="partner-link">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="our-promise">
+            <div class="container">
+                <h2 class="section-heading">Why Choose NavRasa IT Solutions?</h2>
+                <div class="promise-grid">
+                    <div class="promise-card">
+                        <div class="number">1</div>
+                        <h3>Innovation-Driven</h3>
+                        <p>We deliver creative, future-ready solutions that help you stay ahead in a fast-changing
+                            digital world.</p>
+                    </div>
+                    <div class="promise-card">
+                        <div class="number">2</div>
+                        <h3>Client-Centric</h3>
+                        <p>Your goals are our priority. We tailor every project to your unique needs and business
+                            objectives.</p>
+                    </div>
+                    <div class="promise-card">
+                        <div class="number">3</div>
+                        <h3>Quality & Security</h3>
+                        <p>We follow best practices and strict quality standards to ensure secure, reliable, and
+                            high-performing solutions.</p>
+                    </div>
+                    <div class="promise-card">
+                        <div class="number">4</div>
+                        <h3>Transparent Communication</h3>
+                        <p>We keep you informed at every step, ensuring clarity, trust, and a smooth project experience.
+                        </p>
+                    </div>
+                    <div class="promise-card">
+                        <div class="number">5</div>
+                        <h3>Scalable & Flexible</h3>
+                        <p>Our solutions are designed to grow with your business, adapting to new challenges and
+                            opportunities.</p>
+                    </div>
+                    <div class="promise-card">
+                        <div class="number">6</div>
+                        <h3>24/7 Support</h3>
+                        <p>Our team is always available to resolve issues and keep your business running smoothly.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="index.html">Careers</a></li>
+                        <li><a href="#" class="request-btn">Request to Quote</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="service.html#software">Software Development</a></li>
+                        <li><a href="service.html#web">Web Development</a></li>
+                        <li><a href="service.html#mobile">Mobile App Development</a></li>
+                        <li><a href="service.html#cloud">Cloud Solutions</a></li>
+                        <li><a href="service.html#ui">UI/UX Design</a></li>
+                        <li><a href="service.html#consulting">IT Consulting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="case.html">Case Studies</a></li>
+                        <li><a href="FQA.html">FQAs</a></li>
+                        <li><a href="news.html">News & Events</a></li>
+                        <li><a href="FQA.html">Downloads</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="policy.html">Privacy Policy</a></li>
+                        <li><a href="policy.html">Terms of Use</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <p>Shyam Nagar, Jaipur, Rajasthan, India</p>
+                    <p><a href="mailto:info@navrasaitsolutions.com">info@navrasaitsolutions.com</a></p>
+                    <p><a href="tel:+916377067867">+916377067867</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 NavRasa IT Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!--Consultation Form Modal-->
+    <div id="consultationModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('consultationModal')">&times;</button>
+            <h2>Book a Free Consultation</h2>
+            <form id="consultationForm" class="contact-form">
+                <div class="form-row" style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <div class="form-group" style="flex:1; min-width:220px;">
+                        <label for="consultName">Your Name*</label>
+                        <input type="text" id="consultName" name="consultName" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group" style="flex:1; min-width:220px;">
+                        <label for="consultEmail">Email*</label>
+                        <input type="email" id="consultEmail" name="consultEmail" placeholder="Enter your email"
+                            required>
+                    </div>
+                </div>
+                <div class="form-row" style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <div class="form-group" style="flex:1; min-width:220px;">
+                        <label for="consultPhone">Mobile Number</label>
+                        <input type="tel" id="consultPhone" name="consultPhone" placeholder="Enter your phone number">
+                    </div>
+                    <div class="form-group" style="flex:1; min-width:220px;">
+                        <label for="consultCompany">Company Name</label>
+                        <input type="text" id="consultCompany" name="consultCompany"
+                            placeholder="Enter your company name (optional)">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="consultService">Service*</label>
+                    <select id="consultService" name="consultService" required>
+                        <option value="">Please Select Service</option>
+                        <option value="Software Development">Software Development</option>
+                        <option value="Web Development">Web Development</option>
+                        <option value="Mobile App Development">Mobile App Development</option>
+                        <option value="Cloud Solutions">Cloud Solutions</option>
+                        <option value="UI/UX Design">UI/UX Design</option>
+                        <option value="IT Consulting">IT Consulting</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="consultDetails">Project Details</label>
+                    <textarea id="consultDetails" name="consultDetails"
+                        placeholder="Enter project details (optional)"></textarea>
+                </div>
+                <div style="font-size: 0.85rem; color: #888; margin-bottom: 1rem;">
+                    This site is protected by reCAPTCHA and the Google <a href="#" style="color:#2563eb;">Privacy
+                        Policy</a> and <a href="#" style="color:#2563eb;">Terms of Service</a> apply.
+                </div>
+                <button type="submit" class="submit-btn" style="width:100%;background:#000;">Submit</button>
+            </form>
+            <div class="form-confirmation" style="display: none;">
+                <p>Thank you for booking a consultation! We'll contact you within 24 hours to schedule your session.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
