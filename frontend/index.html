@@ -6,11 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/Styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-     <link rel="icon" type="image/png" href="images/navrasa_logo.png">
+    <link rel="icon" type="image/png" href="images/navrasa_logo.png">
     <title>NavRasa IT Solutions - Digital Transformation Experts</title>
     <script src="js/script.js" defer></script>
     <script src="js/contact.js" defer></script>
 </head>
+<style>
+    .hero {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .hero-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        z-index: -1;
+        opacity: 0.6;
+        /* Optional: adds a soft overlay effect */
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 1;
+        color: #fff;
+    }
+</style>
 
 <body>
     <header>
@@ -53,6 +77,11 @@
 
     <main>
         <section class="hero">
+            <!-- Video added here -->
+                <video class="hero-video" autoplay muted loop playsinline>
+                    <source src="./images/hero.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             <div class="container">
                 <div class="hero-content">
                     <h1>Empowering Your Digital Growth</h1>
@@ -66,7 +95,6 @@
                 </div>
             </div>
         </section>
-
         <section class="core-services">
             <div class="container">
                 <h2 class="section-heading">Our Core Services</h2>
