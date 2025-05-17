@@ -106,7 +106,7 @@ footer {
 .footer-section h4 {
   color: var(--white);
   margin-bottom: 1.5rem;
-  font-size: 1.25rem;
+  font-size:1.4rem;
   position: relative;
 }
 
@@ -114,8 +114,8 @@ footer {
   content: '';
   position: absolute;
   bottom: -0.5rem;
-  left: 0;
-  width: 40px;
+  left:0;
+  width: 66px;
   height: 2px;
   background: var(--primary);
 }
@@ -490,13 +490,6 @@ nav ul li a {
   transition: color 0.3s ease, background-color 0.3s ease;
   white-space: nowrap;
 }
-
-/* Optional: active and hover styles 
-nav ul li a:hover,
-nav ul li a.active {
-  color: var(--primary) !important;
-}*/
-
 /* Make sure dropdown doesn't overflow */
 nav ul li .dropdown-content {
   white-space: nowrap;
@@ -636,7 +629,6 @@ nav ul li .dropdown-content {
   background-position: center;
   color: var(--white);
   text-align: center;
-  padding: 6rem 0;
 }
 
 .hero-content {
@@ -662,7 +654,7 @@ nav ul li .dropdown-content {
 
 /* Core Services Section */
 .core-services {
-  padding: 6rem 0;
+  padding:2.5rem 0;
   background: var(--dark);
 }
 
@@ -704,24 +696,24 @@ nav ul li .dropdown-content {
 
 .development-partners h2 {
     text-align: center;
-    margin-bottom: 50px;
-    color: var(--white);
-    font-size: 2rem;
+    /*margin-bottom: 50px;*/
+    color: var(--primary);
+    font-size: 1.9rem;
     position: relative;
-    padding-bottom: 20px;
+    padding-bottom: 25px;
 }
 
-.development-partners h2::after {
+/*.development-partners h2::after {
     content: '';
     position: absolute;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 80px;
+    width: 95%;
     height: 3px;
     background-color: var(--primary);
 }
-
+*/
 .partners-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -747,7 +739,7 @@ nav ul li .dropdown-content {
 
 .partner-icon {
     width: 64px;
-    height: 64px;
+    /*height: 64px;*/
     margin-bottom: 20px;
     transition: transform 0.3s ease;
 }
@@ -798,9 +790,28 @@ nav ul li .dropdown-content {
     }
     
     .development-partners h2 {
-        font-size: 1.75rem;
-        padding: 0 20px;
+        font-size: 1.6rem;
+        padding: 0 22px;
     }
+    .development-partners {
+    padding: 0;
+    background-color: var(--dark);
+    }
+    .partner-card h3 {
+    color: var(--white);
+    /*margin-bottom: 15px;*/
+    font-size: 1.5rem;
+    }
+   /* .development-partners h2::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 3px;
+    background-color: var(--primary);
+}*/
 }
 
 /* Our Promise Section */
@@ -830,7 +841,7 @@ nav ul li .dropdown-content {
 }
 
 .promise-card .number {
-  position: absolute;
+  /*position: absolute;*/
   top: -20px;
   left: 20px;
   background: var(--primary);
@@ -895,7 +906,7 @@ nav ul li .dropdown-content {
   .service-card,
   .partner-card,
   .promise-card {
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
 }
 }
 
@@ -1009,7 +1020,7 @@ nav ul li .dropdown-content {
 @media (max-width: 992px) {
   .hero {
     min-height: auto;
-    padding: 80px 0;
+    padding: 0;
   }
 
   .hero .container {
@@ -1078,16 +1089,16 @@ nav ul li .dropdown-content {
   position: relative;
 }
 
-.section-heading {
-  position: relative;
+/*.section-heading {
+  /*position: relative;
   display: inline-block;
   margin-bottom: 30px;
   animation: slideIn 0.8s ease-out;
-}
+}*/
 
 .section-heading:after {
   content: '';
-  position: absolute;
+  /*position: absolute;*/
   bottom: -10px;
   left: 0;
   width: 60px;
@@ -2079,7 +2090,7 @@ nav ul li .dropdown-content {
   animation: pulse 1s infinite;
 }
 .contact-content {
-  padding: 100px 0;
+  padding: px 0;
   background-color: var(--dark);
 }
 
@@ -2409,7 +2420,7 @@ nav ul li .dropdown-content {
 footer {
   background-color: var(--darker);
   color: var(--light);
-  padding: 60px 0 20px;
+  /*padding: 60px 0 20px;*/
   position: relative;
 }
 
@@ -2417,25 +2428,16 @@ footer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
-
-.footer-logo h3 {
-  font-size: 24px;
-  margin-bottom: 5px;
-  color: var(--primary);
-}
-
-.footer-logo p {
-  opacity: 0.7;
-}
-
 .footer-links h4,
 .footer-contact h4,
 .footer-social h4 {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  margin-top: -10px;
   position: relative;
   display: inline-block;
+  padding: 15px;
 }
 
 .footer-links h4:after,
@@ -2443,9 +2445,9 @@ footer {
 .footer-social h4:after {
   content: '';
   position: absolute;
-  bottom: -5px;
-  left: 0;
-  width: 30px;
+  bottom: 2px;
+  left: 15px;
+  width: 107px;
   height: 2px;
   background-color: var(--primary);
 }
@@ -2473,6 +2475,8 @@ footer {
   margin-bottom: 15px;
   display: flex;
   align-items: center;
+  padding-left: 17px;
+  color: white;
 }
 
 .footer-contact p i {
@@ -2887,7 +2891,7 @@ button:hover ~ .custom-cursor {
     border-radius: 0;
     justify-content: center;
     background: none !important;
-    color: #333 !important;
+    color: #ffffff !important;
     box-shadow: none !important;
     border: none !important;
   }
@@ -3191,7 +3195,7 @@ button:hover ~ .custom-cursor {
   background-clip: text;
   color: transparent;
   transition: text-shadow 0.3s;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 .section-heading:hover, h2:hover, h3:hover {
   text-shadow: 0 2px 16px var(--primary), 0 1px 8px var(--secondary);
@@ -3747,7 +3751,8 @@ nav ul li a:hover:after {
   text-align: center;
   font-size: 2.5rem;
   color: var(--white);
-  margin-bottom: 48px;
+  margin-top: -28px;
+  margin-bottom: 45px;
   position: relative;
   z-index: 2;
 }
@@ -3853,7 +3858,7 @@ body.project-page .project-card {
 }
 
 .highlights {
-    padding: 80px 0;
+    padding: 0;
     background: var(--dark);
 }
 
@@ -3892,7 +3897,7 @@ body.project-page .project-card {
 }
 
 .core-values {
-    padding: 80px 0;
+    padding: 60px 0;
     text-align: center;
     background: var(--darker);
 }
@@ -3912,14 +3917,13 @@ body.project-page .project-card {
 }
 
 .our-promise {
-    padding: 80px 0;
+    padding: 0;
     background: var(--dark);
 }
 
 .our-promise h2 {
     text-align: center;
     font-size: 2.5rem;
-    color: var(--primary);
     margin-bottom: 3rem;
 }
 
@@ -3947,7 +3951,7 @@ body.project-page .project-card {
 .promise-card .number {
     font-size: 2rem;
     font-weight: 700;
-    color: var(--primary);
+    /*color: var(--primary);*/
     margin-bottom: 1rem;
 }
 
@@ -3963,7 +3967,7 @@ body.project-page .project-card {
 }
 
 .navrasa-edge {
-    padding: 80px 0;
+    padding:35px 0;
     background: var(--darker);
 }
 
@@ -4030,7 +4034,7 @@ body.project-page .project-card {
 
 @media (max-width: 768px) {
     .page-header {
-        padding: 100px 0 60px;
+        padding: 50px 0 60px;
     }
 
     .page-header h1 {
@@ -4140,7 +4144,7 @@ body, * {
 /* --- TECHNOLOGIES SECTION --- */
 .technologies-section {
   background: var(--darker);
-  padding: 70px 0 50px 0;
+  padding: 10px 0 50px 0;
 }
 .tech-heading {
   color: var(--white);
@@ -4150,7 +4154,7 @@ body, * {
 }
 .tech-tabs {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   gap: 18px;
   margin-bottom: 32px;
   flex-wrap: wrap;
@@ -4540,7 +4544,7 @@ i[class^="fa-"], i[class*=" fa-"] {
   .hero-content,
   .contact-form-container,
   .footer-content {
-    padding-left: 10px !important;
+    padding-left: -3px !important;
     padding-right: 10px !important;
   }
   .footer-content {
@@ -5027,7 +5031,7 @@ img {
 }
 @media (max-width: 768px) {
   .service-process {
-    padding: 60px 0 40px 0;
+    padding: 50px 0 40px 0;
   }
   .service-process h2 {
     font-size: 2rem;
@@ -5263,7 +5267,7 @@ nav ul.active {
 /*service image*/
 #solutions-section {
   background: #000000;
-  padding: 2rem 1rem;
+  padding: -1rem 1rem;
   text-align: center;
 }
 
@@ -5300,7 +5304,7 @@ nav ul.active {
 
 .solution-item {
   background: rgb(0, 0, 0);
-  flex: 1 1 320px;
+  /*flex: 1 1 320px;*/
   max-width: 460px;
   padding: 1.5rem;
   border-radius: 12px;
