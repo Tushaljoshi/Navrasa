@@ -2101,7 +2101,7 @@ nav ul li .dropdown-content {
 }
 
 .contact-info {
-  /*background-color: var(--primary);*/
+  background-color: #0e0e0f;
   color: var(--white);
   padding: 40px;
   border-radius: 10px;
@@ -2189,7 +2189,7 @@ nav ul li .dropdown-content {
 
 .contact-form-container {
   padding: 40px;
-  background-color: var(--secondary);
+  background-color: #0e0e0f;
   border-radius: 10px;
   box-shadow: var(--shadow);
   transition: var(--transition);
