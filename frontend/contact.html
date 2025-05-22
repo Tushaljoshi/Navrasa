@@ -7,6 +7,15 @@
     <link rel="stylesheet" href="css/Styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="icon" type="image/png" href="images/navrasa_logo.png">
+    <!-- Standard Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/navrasa_logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/navrasa_logo.png">
+
+    <!-- Apple Touch Icon (iOS Safari) -->
+    <link rel="apple-touch-icon" href="images/navrasa_logo.png">
+
+    <!-- Android Chrome -->
+    <link rel="shortcut icon" href="images/navrasa_logo.png">
     <title>Contact Us - NavRasa IT Solutions</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="js/contact.js" defer></script>
@@ -83,7 +92,7 @@
                                 </div>
                                 <div class="details">
                                     <h4>Phone</h4>
-                                    
+
                                     <p>+9163770 67867</p>
                                 </div>
                             </div>
@@ -233,25 +242,25 @@
 
     <script>
         /* hamburger*/
-document.addEventListener("DOMContentLoaded", function () {
-  const hamburger = document.getElementById("hamburger");
-  const nav = document.querySelector("nav ul");
+        document.addEventListener("DOMContentLoaded", function () {
+            const hamburger = document.getElementById("hamburger");
+            const nav = document.querySelector("nav ul");
 
-  if (hamburger && nav) {
-    hamburger.addEventListener("click", () => {
-      hamburger.classList.toggle("active"); // animate icon
-      nav.classList.toggle("active");       // toggle menu
-    });
+            if (hamburger && nav) {
+                hamburger.addEventListener("click", () => {
+                    hamburger.classList.toggle("active"); // animate icon
+                    nav.classList.toggle("active");       // toggle menu
+                });
 
-    // Optional: Close menu on link click
-    nav.querySelectorAll("a").forEach(link => {
-      link.addEventListener("click", () => {
-        hamburger.classList.remove("active");
-        nav.classList.remove("active");
-      });
-    });
-  }
-});
+                // Optional: Close menu on link click
+                nav.querySelectorAll("a").forEach(link => {
+                    link.addEventListener("click", () => {
+                        hamburger.classList.remove("active");
+                        nav.classList.remove("active");
+                    });
+                });
+            }
+        });
 
     </script>
 </body>
