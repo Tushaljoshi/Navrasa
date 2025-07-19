@@ -331,6 +331,22 @@ img {
 /* Buttons with Animations */
 .cta-btn, .contact-btn, .submit-btn {
   display: inline-block;
+  padding: 12px 9px;
+  background: var(--gradient);
+  color: #fff;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: var(--transition);
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: var(--shadow);
+  animation: glow 2s infinite;
+}
+ .submit-btn {
+  display: inline-block;
   padding: 12px 28px;
   background: var(--gradient);
   color: #fff;
@@ -345,7 +361,6 @@ img {
   box-shadow: var(--shadow);
   animation: glow 2s infinite;
 }
-
 .cta-btn:before, .contact-btn:before, .submit-btn:before {
   content: "";
   position: absolute;
