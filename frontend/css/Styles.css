@@ -738,24 +738,32 @@ nav ul li .dropdown-content {
 }
 
 .partner-card {
-    background: var(--darker);
-    border-radius: 10px;
-    padding: 30px;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid var(--border);
-    color: var(--white);
+  background: var(--darker);
+  border-radius: 12px;
+  padding: px;
+  text-align: center;
+  transition: box-shadow 0.3s ease, background-image 0.4s ease;
+  border: 1px solid var(--border);
+  color: var(--white);
+  position: relative;
 }
 
 .partner-card:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow);
+  box-shadow: 0 0 5px #7f5af0, 0 0 5px #7f5af0, 0 0 5px #7f5af0;
+  border: 1px solid transparent;
+  background-image:
+    linear-gradient(var(--darker), var(--darker)), /* Inner background */
+    linear-gradient(145deg, #7f5af0, #00d4ff);     /* Glowing border */
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  border-radius: 12px;
 }
 
 .partner-icon {
     width: 64px;
     /*height: 64px;*/
     margin-bottom: 20px;
+    margin-top: 30px;
     transition: transform 0.3s ease;
 }
 
@@ -765,7 +773,8 @@ nav ul li .dropdown-content {
 
 .partner-card h3 {
     color: var(--white);
-    margin-bottom: 15px;
+    margin-bottom: 5px;
+    margin-top: 5px;
     font-size: 1.5rem;
 }
 
@@ -828,7 +837,6 @@ nav ul li .dropdown-content {
     background-color: var(--primary);
 }*/
 }
-
 /* Our Promise Section */
 .our-promise {
   padding: 6rem 0;
@@ -847,18 +855,30 @@ nav ul li .dropdown-content {
   border-radius: 12px;
   padding: 2rem;
   position: relative;
-  transition: var(--transition);
+  transition: box-shadow 0.3s ease, background-image 0.4s ease;
+  border: 1px solid var(--border);
+  color: var(--white);
+
+  /* CENTER CONTENT */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .promise-card:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow-lg);
+  /* GLOW ONLY — NO MOVEMENT */
+  box-shadow: 0 0 5px #7f5af0, 0 0 5px #7f5af0, 0 0 5px #7f5af0;
+  border: 1px solid transparent;
+  background-image:
+    linear-gradient(var(--darker), var(--darker)),
+    linear-gradient(145deg, #7f5af0, #00d4ff);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
 }
 
 .promise-card .number {
-  /*position: absolute;*/
-  top: -20px;
-  left: 20px;
   background: var(--primary);
   color: var(--white);
   width: 40px;
@@ -868,6 +888,7 @@ nav ul li .dropdown-content {
   align-items: center;
   justify-content: center;
   font-weight: 700;
+  margin-bottom: 1rem;
 }
 
 /* Modal Styles */
@@ -922,6 +943,7 @@ nav ul li .dropdown-content {
   .partner-card,
   .promise-card {
     margin-bottom: 0.5rem;
+    margin-right: 2px;
 }
 }
 
@@ -3952,7 +3974,7 @@ body.project-page .project-card {
 
 .promise-card {
     background: var(--darker);
-    padding: 2rem;
+    padding: 1px;
     border-radius: 12px;
     box-shadow: var(--shadow);
     transition: transform 0.3s ease;
@@ -3968,17 +3990,20 @@ body.project-page .project-card {
     font-weight: 700;
     /*color: var(--primary);*/
     margin-bottom: 1rem;
+    margin-right: 2px;
 }
 
 .promise-card h3 {
     font-size: 1.3rem;
     color: var(--white);
     margin-bottom: 1rem;
+    margin-right: 2px;
 }
 
 .promise-card p {
     color: var(--gray-light);
     line-height: 1.6;
+    margin-right: 2px;
 }
 
 .navrasa-edge {

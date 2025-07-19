@@ -391,7 +391,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 /* index hero section word rape*/
-const words = ["Growth", "Success", "Journey", "Future", "Innovation"];
+const words = ["Result", "Growth", "Success", "Journey", "Innovation"];
 const element = document.getElementById("changing-word");
 let wordIndex = 0;
 let charIndex = 0;
