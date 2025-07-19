@@ -390,3 +390,38 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+/* index hero section word rape*/
+const words = ["Growth", "Success", "Journey", "Future", "Innovation"];
+const element = document.getElementById("changing-word-container");
+let wordIndex = 0;
+let charIndex = 0;
+let typing = true;
+
+function typeEffect() {
+  const currentWord = words[wordIndex];
+
+  if (typing) {
+    // Typing phase
+    if (charIndex <= currentWord.length) {
+      element.textContent = currentWord.substring(0, charIndex);
+      charIndex++;
+      setTimeout(typeEffect, 150);
+    } else {
+      typing = false;
+      setTimeout(typeEffect, 1000); // Pause before deleting
+    }
+  } else {
+    // Deleting phase
+    if (charIndex >= 0) {
+      element.textContent = currentWord.substring(0, charIndex);
+      charIndex--;
+      setTimeout(typeEffect, 100);
+    } else {
+      typing = true;
+      wordIndex = (wordIndex + 1) % words.length;
+      setTimeout(typeEffect, 500); // Pause before typing next word
+    }
+  }
+}
+
+typeEffect();
