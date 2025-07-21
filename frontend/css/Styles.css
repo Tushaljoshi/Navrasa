@@ -655,7 +655,9 @@ nav ul li .dropdown-content {
     color: var(--primary);
     font-size: 1.9rem;
     position: relative;
-    padding-bottom: 25px;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+        margin-top: -40px;
 }
 
 /*.development-partners h2::after {
@@ -746,6 +748,7 @@ nav ul li .dropdown-content {
     .development-partners h2 {
         font-size: 1.6rem;
         padding: 0 22px;
+        
     }
     .development-partners {
     padding: 0;
@@ -2090,7 +2093,8 @@ nav ul li .dropdown-content {
 }
 
 .contact-info h3 {
-  margin-bottom: 30px;
+  margin-bottom: 45px;
+  margin-top: -15px;
   position: relative;
 }
 
@@ -2107,7 +2111,7 @@ nav ul li .dropdown-content {
 .contact-item {
   display: flex;
   align-items: center;
-  margin-bottom: 25px;
+  margin-bottom: 65px;
   transition: var(--transition);
 }
 .icon {
@@ -2168,7 +2172,8 @@ nav ul li .dropdown-content {
 }
 
 .contact-form-container h3 {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+  margin-top: -15px;
   color: var(--white);
   position: relative;
 }
@@ -2463,7 +2468,7 @@ footer {
 .footer-contact h4,
 .footer-social h4 {
   margin-bottom: 10px;
-  margin-top: -10px;
+  margin-top: -18px;
   position: relative;
   display: inline-block;
   padding: 15px;
@@ -2474,7 +2479,7 @@ footer {
 .footer-social h4:after {
   content: '';
   position: absolute;
-  bottom: 2px;
+  bottom: 9px;
   left: 15px;
   width: 107px;
   height: 2px;
@@ -2510,7 +2515,7 @@ footer {
 
 .footer-contact p i {
   color: var(--primary);
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 .footer-social .social-icons {
@@ -3804,7 +3809,7 @@ nav ul li a:hover:after {
   border: 1.5px solid rgba(44, 181, 232, 0.13);
   border-radius: 18px;
   box-shadow: 0 8px 32px rgba(44,181,232,0.10);
-  padding: 36px 18px 28px 18px;
+  padding: 36px 18px 36px 18px;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -3814,6 +3819,9 @@ nav ul li a:hover:after {
   font-size: 1.1rem;
   font-weight: 600;
   letter-spacing: 0.2px;
+      margin-left: 20px;
+      margin-right: 20px;
+
 }
 .industry-card:hover {
   transform: translateY(-10px) scale(1.03);
@@ -3883,6 +3891,7 @@ body.project-page .project-card {
     max-width: 800px;
     margin: 0 auto 1.5rem;
     line-height: 1.6;
+    text-align: justify;
 }
 
 .highlights {
@@ -5047,7 +5056,7 @@ img {
   transform: translateX(-50%);
   background: linear-gradient(135deg, #7f5af0, #2cb5e8);
   color: white;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   font-weight: 700;
   padding: 8px 16px;
   border-radius: 20px;
@@ -5169,19 +5178,26 @@ img {
     font-size: 1rem;
   }
 }
-
+/* Default blog-card style */
+/* Base styling */
 .blog-card {
   background: #000000;
   padding: 1.5rem;
   border-radius: 16px;
-  box-shadow: 0 4px 10px rgba(28, 16, 108, 0.1);
   overflow: hidden;
-  transition: max-height 0.5s ease, padding 0.5s ease;
+  transition: all 0.5s ease;
   position: relative;
   max-height: none;
   color: white;
 }
 
+.blog-card.expanded:hover {
+  box-shadow: 0 0 5px #1d4ed8, 0 0 5px #1d4ed8, 0 0 5px #1d4ed8;
+  transform: scale(1.01);
+  transition: all 0.3s ease;
+}
+
+/* Hidden content initially */
 .more-content {
   opacity: 0;
   max-height: 0;
@@ -5189,6 +5205,7 @@ img {
   overflow: hidden;
 }
 
+/* Expanded state */
 .blog-card.expanded {
   max-height: 1000px;
 }
@@ -5199,6 +5216,7 @@ img {
   margin-top: 1rem;
 }
 
+/* Button styling */
 .learn-more-btn {
   margin-top: 1rem;
   padding: 0.5rem 1rem;
@@ -5207,19 +5225,34 @@ img {
   color: white;
   border-radius: 8px;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.learn-more-btn:hover {
+  background: #1d4ed8;
+  color: white;
+  box-shadow: 0 0 10px #1d4ed8;
 }
 
 .learn-more-btn.hidden {
   display: none;
 }
 
+/* Blog post hover (optional container) */
 .blog-post {
   background-color: #000000;
   padding: 20px;
   border-radius: 8px;
-  box-shadow:  0 0 5px #1d4ed8, 0 0 5px #1d4ed8, 0 0 5px #1d4ed8;
+  box-shadow: 0 0 5px #1d4ed8, 0 0 5px #1d4ed8, 0 0 5px #1d4ed8;
   color: white;
+  transition: all 0.3s ease;
 }
+
+.blog-post:hover {
+  box-shadow: 0 0 5px #1d4ed8, 0 0 5px #1d4ed8, 0 0 5px #1d4ed8;
+  transform: translateY(-5px);
+}
+
 
 /* Default hidden on desktop */
 /* Hamburger base */
@@ -5497,4 +5530,11 @@ nav ul.active {
 .footer-contact a:hover {
   color: #7f5af0; /* or your theme highlight */
   text-decoration: underline;
+}
+i[class^="fa-"]{
+  color: #fff !important;
+  font-size: 1.2rem !important;
+  display: inline-block !important;
+  visibility: visible !important;
+  margin-left: -30px;
 }

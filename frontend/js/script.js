@@ -330,6 +330,14 @@ document.addEventListener("DOMContentLoaded", () => {
             const cardId = button.getAttribute("data-target");
             const targetCard = document.getElementById(cardId);
 
+            // If the same card is already expanded, collapse it
+            if (currentlyExpanded === targetCard) {
+                targetCard.classList.remove("expanded");
+                button.classList.remove("hidden");
+                currentlyExpanded = null;
+                return;
+            }
+
             // Collapse previously expanded card
             if (currentlyExpanded && currentlyExpanded !== targetCard) {
                 currentlyExpanded.classList.remove("expanded");
@@ -337,11 +345,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 if (previousButton) previousButton.classList.remove("hidden");
             }
 
-            // Expand new card
+            // Expand the new card
             targetCard.classList.add("expanded");
             button.classList.add("hidden");
-
-            // Update tracker
             currentlyExpanded = targetCard;
         });
     });
