@@ -97,97 +97,107 @@
                                     <i class="fab fa-whatsapp info-icon"></i>
                                 </div>
                                 <div class="details">
-
                                     <h4>WhatsApp</h4>
+                                    <p>
+                                        <a href="https://wa.me/916377067867" target="_blank" rel="noopener noreferrer">
+                                            +91 63770 67867
+                                        </a><br>
+                                        <a href="https://wa.me/917014686805" target="_blank" rel="noopener noreferrer">
+                                            +91 70146 86805
+                                        </a>
+                                    </p>
                                 </div>
                             </a>
                         </div>
 
                         <div class="contact-item">
-                            <a href="https://www.google.com/maps?q=Shyam+Nagar,+Jaipur,+Rajasthan,+India" target="_blank" class="location-link">
-                              <div class="icon">
-                                <i class="fas fa-map-marker-alt info-icon"></i>
-                              </div>
-                              <div class="details">
-                                <h4>Location</h4>
-                                <p>Jaipur, Rajasthan, India</p>
-                              </div>
+                            <a href="https://g.co/kgs/aoc5a5A" target="_blank" class="location-link">
+                                <div class="icon">
+                                    <i class="fas fa-map-marker-alt info-icon"></i>
+                                </div>
+                                <div class="details">
+                                    <h4>Location</h4>
+                                    <p>52, New Sanganer Rd, Kalyanpuri Extension, Shiv Puri Colony, Sodala, Jaipur,
+                                        Rajasthan 302019</p>
+                                </div>
                             </a>
-                          </div>
-                          
+                        </div>
 
-                    <div class="social-connect">
-                        <h4>Connect With Us</h4>
-                        <div class="social-icons">
-                            <a href="https://www.instagram.com/navrasait" aria-label="Instagram" target="_blank"
-                                rel="noopener"><img src="images/social/instagram.svg" alt="Instagram"
-                                    style="width:32px;height:32px;"></a>
-                            <a href="https://x.com/NavrasaIT" aria-label="Twitter" target="_blank" rel="noopener"><img
-                                    src="images/social/twitter.svg" alt="Twitter" style="width:32px;height:32px;"></a>
-                            <a href="https://www.linkedin.com/company/navrasa-it-solutions/?viewAsMember=true"
-                                aria-label="LinkedIn" target="_blank" rel="noopener"><img
-                                    src="images/social/linkedin.svg" alt="LinkedIn" style="width:32px;height:32px;"></a>
+
+                        <div class="social-connect">
+                            <h4>Connect With Us</h4>
+                            <div class="social-icons">
+                                <a href="https://www.instagram.com/navrasait" aria-label="Instagram" target="_blank"
+                                    rel="noopener"><img src="images/social/instagram.svg" alt="Instagram"
+                                        style="width:32px;height:32px;"></a>
+                                <a href="https://x.com/NavrasaIT" aria-label="Twitter" target="_blank"
+                                    rel="noopener"><img src="images/social/twitter.svg" alt="Twitter"
+                                        style="width:32px;height:32px;"></a>
+                                <a href="https://www.linkedin.com/company/navrasa-it-solutions/?viewAsMember=true"
+                                    aria-label="LinkedIn" target="_blank" rel="noopener"><img
+                                        src="images/social/linkedin.svg" alt="LinkedIn"
+                                        style="width:32px;height:32px;"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form-container">
+                        <h3>Start with a free consultation</h3>
+                        <form id="consultationForm" class="contact-form">
+                            <div class="form-row" style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                                <div class="form-group" style="flex:1; min-width:220px;">
+                                    <label for="consultName">Your Name*</label>
+                                    <input type="text" id="consultName" name="consultName" placeholder="Enter your name"
+                                        required>
+                                </div>
+                                <div class="form-group" style="flex:1; min-width:220px;">
+                                    <label for="consultEmail">Email*</label>
+                                    <input type="email" id="consultEmail" name="consultEmail"
+                                        placeholder="Enter your email" required>
+                                </div>
+                            </div>
+                            <div class="form-row" style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                                <div class="form-group" style="flex:1; min-width:220px;">
+                                    <label for="consultPhone">Mobile Number</label>
+                                    <input type="tel" id="consultPhone" name="consultPhone"
+                                        placeholder="Enter your phone number">
+                                </div>
+                                <div class="form-group" style="flex:1; min-width:220px;">
+                                    <label for="consultCompany">Company Name</label>
+                                    <input type="text" id="consultCompany" name="consultCompany"
+                                        placeholder="Enter your company name (optional)">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="consultService">Service*</label>
+                                <select id="consultService" name="consultService" required>
+                                    <option value="">Please Select Service</option>
+                                    <option value="Software Development">Software Development</option>
+                                    <option value="Web Development">Web Development</option>
+                                    <option value="Mobile App Development">Mobile App Development</option>
+                                    <option value="Cloud Solutions">Cloud Solutions</option>
+                                    <option value="UI/UX Design">UI/UX Design</option>
+                                    <option value="IT Consulting">IT Consulting</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="consultDetails">Project Details</label>
+                                <textarea id="consultDetails" name="consultDetails"
+                                    placeholder="Enter project details (optional)"></textarea>
+                            </div>
+                            <div style="font-size: 0.85rem; color: #888; margin-bottom: 1rem;">
+                                This site is protected by reCAPTCHA and the Google
+                                <a href="#" style="color:#2563eb;">Privacy Policy</a> and
+                                <a href="#" style="color:#2563eb;">Terms of Service</a> apply.
+                            </div>
+                            <button type="submit" class="submit-btn" style="width:100%;background:#000;">Submit</button>
+                        </form>
+
+                        <div class="form-confirmation" style="display: none;">
+                            <p>Thank you for booking a consultation! We'll contact you within 24 hours to schedule your
+                                session.</p>
                         </div>
                     </div>
                 </div>
-                <div class="contact-form-container">
-                    <h3>Start with a free consultation</h3>
-                    <form id="consultationForm" class="contact-form">
-                        <div class="form-row" style="display: flex; gap: 1rem; flex-wrap: wrap;">
-                            <div class="form-group" style="flex:1; min-width:220px;">
-                                <label for="consultName">Your Name*</label>
-                                <input type="text" id="consultName" name="consultName" placeholder="Enter your name"
-                                    required>
-                            </div>
-                            <div class="form-group" style="flex:1; min-width:220px;">
-                                <label for="consultEmail">Email*</label>
-                                <input type="email" id="consultEmail" name="consultEmail" placeholder="Enter your email"
-                                    required>
-                            </div>
-                        </div>
-                        <div class="form-row" style="display: flex; gap: 1rem; flex-wrap: wrap;">
-                            <div class="form-group" style="flex:1; min-width:220px;">
-                                <label for="consultPhone">Mobile Number</label>
-                                <input type="tel" id="consultPhone" name="consultPhone"
-                                    placeholder="Enter your phone number">
-                            </div>
-                            <div class="form-group" style="flex:1; min-width:220px;">
-                                <label for="consultCompany">Company Name</label>
-                                <input type="text" id="consultCompany" name="consultCompany"
-                                    placeholder="Enter your company name (optional)">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="consultService">Service*</label>
-                            <select id="consultService" name="consultService" required>
-                                <option value="">Please Select Service</option>
-                                <option value="Software Development">Software Development</option>
-                                <option value="Web Development">Web Development</option>
-                                <option value="Mobile App Development">Mobile App Development</option>
-                                <option value="Cloud Solutions">Cloud Solutions</option>
-                                <option value="UI/UX Design">UI/UX Design</option>
-                                <option value="IT Consulting">IT Consulting</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="consultDetails">Project Details</label>
-                            <textarea id="consultDetails" name="consultDetails"
-                                placeholder="Enter project details (optional)"></textarea>
-                        </div>
-                        <div style="font-size: 0.85rem; color: #888; margin-bottom: 1rem;">
-                            This site is protected by reCAPTCHA and the Google
-                            <a href="#" style="color:#2563eb;">Privacy Policy</a> and
-                            <a href="#" style="color:#2563eb;">Terms of Service</a> apply.
-                        </div>
-                        <button type="submit" class="submit-btn" style="width:100%;background:#000;">Submit</button>
-                    </form>
-
-                    <div class="form-confirmation" style="display: none;">
-                        <p>Thank you for booking a consultation! We'll contact you within 24 hours to schedule your
-                            session.</p>
-                    </div>
-                </div>
-            </div>
             </div>
         </section>
     </main>
@@ -235,9 +245,12 @@
                 </div>
                 <div class="footer-contact">
                     <h4>Contact Info</h4>
-                    <p>Shyam Nagar, Jaipur, Rajasthan, India</p>
+                    <a href="https://g.co/kgs/aoc5a5A" target="_blank" class="location-link">
+                    <p>52, New Sanganer Rd, Kalyanpuri Extension, Shiv Puri Colony, Sodala, Jaipur,
+                        Rajasthan 302019</p></a>
                     <p><a href="mailto:info@navrasaitsolutions.com">info@navrasaitsolutions.com</a></p>
                     <p><a href="tel:+916377067867">+916377067867</a></p>
+                    <p><a href="tel:+917014686805">+917014686805</a></p>
                 </div>
             </div>
             <div class="footer-bottom">

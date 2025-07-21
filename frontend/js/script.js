@@ -425,3 +425,15 @@ function typeEffect() {
 }
 
 typeEffect();
+
+
+
+
+
+
+
+
+
+
+
+ 
