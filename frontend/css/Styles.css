@@ -388,7 +388,7 @@ header .container {
 .logo h1:after {
   content: '';
   position: absolute;
-  bottom: -2px;
+  bottom: -5px;
   left: 0;
   width: 0;
   height: 2px;
@@ -410,7 +410,6 @@ header .container {
 nav {
   flex: 1;
   display: flex;
-  justify-content: flex-end;
   background-color: #000;
 }
 
@@ -418,10 +417,10 @@ nav ul {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  justify-content: flex-end;
+  justify-content:flex-end;
   align-items: center;
   padding: 0;
-  margin: 0;
+  margin-left: 10px;
   list-style: none;
 }
 
@@ -429,6 +428,7 @@ nav ul {
 nav ul li {
   flex: 1 1 auto;
   text-align: center;
+  margin-left: 20px;
 }
 
 /* Nav links */
@@ -3160,7 +3160,7 @@ button:hover ~ .custom-cursor {
 .logo, .footer-logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  margin-left: 10px;
 }
 
 /* --- GRADIENT THEME FOR BUTTONS & SECTIONS --- */
@@ -3230,7 +3230,8 @@ button:hover ~ .custom-cursor {
   background-clip: text;
   color: transparent;
   transition: text-shadow 0.3s;
-  margin-top: 30px;
+  margin-top: -8px;
+    margin-bottom: 32px;
 }
 .section-heading:hover, h2:hover, h3:hover {
   text-shadow: 0 2px 16px var(--primary), 0 1px 8px var(--secondary);
@@ -3595,6 +3596,10 @@ nav ul li a:hover:after {
   text-align: center;
   transition: var(--transition);
 }
+.industry-card i {
+  font-size: 1.5rem; /* Smaller size */
+  margin-bottom: 0.5rem;
+}
 
 .industry-card:hover {
   transform: translateY(-5px);
@@ -3930,7 +3935,7 @@ body.project-page .project-card {
     font-size: 3rem;
     font-weight: 700;
     color: var(--primary);
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .highlight-card h3 {
@@ -4658,6 +4663,7 @@ img {
     margin-bottom: 1rem;
     font-size: 1rem;
     padding: 1.2rem;
+    margin-top: 28px;
   }
 }
 @media (max-width: 600px) {
@@ -5309,6 +5315,8 @@ img {
   right: 0;
   width: 100%;
   z-index: 1000;
+  margin-top: 60px;
+  margin-left: 1px;
 }
 
 /* Show menu when active */
@@ -5396,7 +5404,7 @@ nav ul.active {
 .solution-item {
   background: var(--darker, #121212);
   border-radius: 12px;
-  padding: 2rem;
+  padding: 1rem;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
    box-shadow:  0 0 5px #1d4ed8, 0 0 5px #1d4ed8, 0 0 5px #1d4ed8;
@@ -5427,7 +5435,6 @@ nav ul.active {
 
 .benefit {
   display: inline-block;
-  margin-top: 1.5rem;
   font-size: 0.85rem;
   color: var(--primary, #007bff);
   font-weight: 600;
@@ -5539,3 +5546,69 @@ i[class^="fa-"]{
   visibility: visible !important;
   margin-left: -30px;
 }
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  z-index: 900;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  transition: transform 0.3s ease;
+  animation: float 2.5s ease-in-out infinite;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+.floating-quote-btn {
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  z-index: 1000;
+  background: transparent;
+  border: none;
+  color: #1d4ed8;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0;
+  box-shadow: none;
+  animation: float 2.5s ease-in-out infinite;
+}
+
+.floating-quote-btn:hover {
+  color: #7f5af0;
+}
+
+.floating-quote-btn i {
+  background: none !important;
+  box-shadow: none !important;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.whatsapp-float,
+.floating-quote-btn {
+  animation: float 2.5s ease-in-out infinite;
+}
+
+
+

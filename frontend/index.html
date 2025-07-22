@@ -38,6 +38,7 @@
         z-index: 1;
         color: #fff;
     }
+
     #changing-word-container {
         display: inline-block;
         direction: rtl;
@@ -74,7 +75,7 @@
                     <span></span>
                 </div>
             </div>
-            <nav id="navbar">
+            <nav id="navbar" style="margin-left: 30px;">
                 <ul>
                     <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="about.html">Company</a></li>
@@ -90,7 +91,7 @@
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="index.html">Careers</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
-                    <button class="contact-btn" onclick="openModal('consultationModal')">Request to Quote</button>
+                    <button class="contact-btn" onclick="openModal('consultationModal')" style="margin-left: 200px;">Get to Quote</button>
 
                     <!--li><a href="#" class="contact-btn" onclick="openModal('consultationModal')">Request to Quote</a></li-->
                 </ul>
@@ -99,6 +100,11 @@
     </header>
 
     <main>
+        <a href="https://wa.me/917014686805" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <button class="floating-quote-btn" onclick="openModal('consultationModal')">
+            <i class="fas fa-comment-dots"></i></button>
         <section class="hero">
             <!-- Video added here -->
             <video class="hero-video" autoplay muted loop playsinline>
@@ -107,13 +113,13 @@
             </video>
             <div class="container">
                 <div class="hero-content">
-                    <h1>Custom Software & AI Solutions That Drive Real <span id="changing-word"></span></h1> 
+                    <h1>Custom Software & AI Solutions That Drive Real <span id="changing-word"></span></h1>
                     <p>NavRasa IT Solutions helps startups, SMBs, and enterprises transform, scale, and succeed with
                         innovative, secure, and scalable IT solutions. We blend strategy, creativity, and technology to
                         deliver measurable business results.</p>
                     <div class="hero-buttons">
-                        <button class="cta-btn" onclick="openModal('consultationModal')">Book a Free
-                            Consultation</button>
+                        <button class="cta-btn" onclick="openModal('consultationModal')">Get a Free
+                            Quote</button>
                     </div>
                 </div>
             </div>
@@ -131,7 +137,7 @@
                             <span>Low-Code Apps</span>
                             <span>Web & Mobile Apps</span>
                             <span>Business Automation</span>
-                           
+
                         </div>
                     </div>
                     <div class="service-card">
@@ -143,7 +149,7 @@
                             <span>Online Store Setup</span>
                             <span>E-Commerce Design</span>
                             <span>Multi-vendor Platforms</span>
-                            
+
                         </div>
                     </div>
                     <div class="service-card">
@@ -151,7 +157,7 @@
                         <p>Turn your ideas into reality. From MVP to full-scale SaaS, we design, develop, and support
                             custom software and digital products for startups and enterprises.</p>
                         <div class="service-tags">
-                            
+
                             <span>Custom Apps</span>
                             <span>UI/UX Design</span>
                             <span>Product Support</span>
@@ -235,7 +241,8 @@
                     <div class="promise-card">
                         <div class="number">2</div>
                         <h3>Client-Centric</h3>
-                        <p>Your dream or goals are our priority. We tailor every project to your unique needs and business
+                        <p>Your dream or goals are our priority. We tailor every project to your unique needs and
+                            business
                             objectives.</p>
                     </div>
                     <div class="promise-card">
@@ -247,7 +254,8 @@
                     <div class="promise-card">
                         <div class="number">4</div>
                         <h3>Transparent Communication</h3>
-                        <p>We keep you informed at every step and new changes ensuring clarity, trust, and a smooth project experience.
+                        <p>We keep you informed at every step and new changes ensuring clarity, trust, and a smooth
+                            project experience.
                         </p>
                     </div>
                     <div class="promise-card">
@@ -259,7 +267,8 @@
                     <div class="promise-card">
                         <div class="number">6</div>
                         <h3>24/7 Support</h3>
-                        <p>Our team is always available to resolve issues and keep your business running smoothly and get succeed.</p>
+                        <p>Our team is always available to resolve issues and keep your business running smoothly and
+                            get succeed.</p>
                     </div>
                 </div>
             </div>
@@ -273,7 +282,7 @@
                     <h4>Quick Links</h4>
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
+                        <li><a href="about.html">Company</a></li>
                         <li><a href="service.html">Services</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
                         <li><a href="blog.html">Blog</a></li>
@@ -307,12 +316,12 @@
                         <li><a href="policy.html">Terms of Use</a></li>
                     </ul>
                 </div>
-                                <div class="footer-contact">
+                <div class="footer-contact">
                     <h4>Contact Info</h4>
 
                     <a href="https://g.co/kgs/aoc5a5A" target="_blank" class="location-link">
                         <p>
-                           <i class="fa-solid fa-location-dot"></i>
+                            <i class="fa-solid fa-location-dot"></i>
                             Shyam Nagar, Jaipur, Rajasthan, India
                         </p>
                     </a>
@@ -320,7 +329,7 @@
                     <p>
                         <a href="mailto:info@navrasaitsolutions.com">
                             <i class="fa-solid fa-envelope fa-xs"></i>
-                                info@navrasa.com
+                            info@navrasa.com
                         </a>
                     </p>
 
@@ -394,4 +403,5 @@
         </div>
     </div>
 </body>
+
 </html>
