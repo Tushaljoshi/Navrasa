@@ -1,9 +1,8 @@
 // Animation on scroll
 document.addEventListener('DOMContentLoaded', () => {
-    // Initialize AOS (Animate On Scroll)
     const elements = document.querySelectorAll('.fade-in, .slide-up, .slide-left, .slide-right');
 
-    const observer = new IntersectionObserver((entries) => {
+    const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('animate');
@@ -444,11 +443,14 @@ typeEffect();
   };
 
   scrollToTopBtn.addEventListener("click", () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior:'smooth' });
   });
 
 
-
+   AOS.init({
+    duration: 1000, // animation duration
+    once: true      // animation happens only once
+  });
 
 
 

@@ -29,6 +29,10 @@
   --gradient: linear-gradient(135deg, #2563eb 0%, #7f5af0 100%);
   --gradient-hover: linear-gradient(135deg, var(--primary-dark) 0%, var(--secondary-dark) 100%);
 }
+html {
+  scroll-behavior: smooth;
+}
+
 
 /* Typography Improvements */
 body {
