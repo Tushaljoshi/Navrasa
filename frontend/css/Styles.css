@@ -4110,9 +4110,13 @@ body.project-page .project-card {
     }
 
     .core-values h2,
-    .our-promise h2,
     .navrasa-edge h2 {
         font-size: 2rem;
+    }
+    
+    .our-promise h2{
+      font-size: 2rem;
+      margin-top: 20px;
     }
 
     .highlights-grid,
